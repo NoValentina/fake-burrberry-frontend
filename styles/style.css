@@ -1,0 +1,16 @@
+
+header {
+  text-align: center;
+}
+
+.description_header {
+  padding: 16px 10px;
+  margin-bottom: 32px;
+  width: 138px;
+  height: 10px;
+}
+
+.description_h1 {
+  text-align: left;
+  font-size: 14px;
+}
