@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.header-logo {
+  width: 138px;
+  height: 10px;
+  padding: 1rem 0;
+}
+
+.product-name {
+  font-size: 0.875rem;
+  font-family: 'Lora', serif;
+  margin: 1.5rem 1rem;
+  color:  #111111;
+  text-align: left;
+}
+/*
+.photo-of-goods {
+  display: flex;
+  flex-direction: row;
+}
+
+.current-photo {
+  width: 300px;
+  height: 400px;
+  background-image: url("../images/bitmap.jpg");
+}
+
+.next-photo {
+  width: 20px;
+  background-image: url("../images/Bitmap.png");
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-item-product {
+  font-weight: Raleway;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 24px;
+}
+
+.price-product {
+  width: 50%;
+  font-size: 12px;
+  float: left;
+
+}
+
+.item-ptoduct {
+  width: 50%;
+  font-size: 12px;
+  float: right;
+  margin-left: 105px;
+  text-align: left;
+}
+
+section {
+  padding: 0 16px;
+}*/
