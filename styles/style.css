@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  max-width: 320px;
 }
 
 html {
@@ -9,6 +9,7 @@ html {
 .header {
   text-align: center;
   border-bottom: 1px solid #c6c6c6;
+  margin: 0;
 }
 
 .header-logo {
@@ -62,7 +63,7 @@ html {
   font-size: 1.125rem;
 }
 
-h2{
+h2 {
   margin: 0;
 }
 
@@ -84,19 +85,84 @@ h2{
   margin-top: 1rem;
 }
 
-.color-dark {
+.color-dark, .color-light {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #232122;
-  border: solid 1px #232122;
   border-radius: 6.25rem;
+  border: none;
 }
 
 .color-light {
-  width: 2.5rem;
-  height: 2.5rem;
   background-color: #cfa880;
-	border: solid 1px #232122;
-  border-radius: 6.25rem;
   margin-left: 1rem;
+}
+
+.color-active {
+  border: solid 1px #232122;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px #c6c6c6;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.action-select {
+  border-radius: 0.125rem;
+	background-color: #171717;
+	border: solid 1px #171717;
+  font-size: 0.75rem;
+  text-align: center;
+	color: #ffffff;
+  font-family: Raleway;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.action-find {
+  border: solid 1px #999999;
+  background-color: inherit;
+  border-radius: 0.125rem;
+  font-family: Raleway;
+	font-size: 0.75rem;
+	text-align: center;
+	color: #171717;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.action-help {
+  align-self: flex-start;
+  font-family: Raleway;
+	font-size: 0.75rem;
+	text-align: center;
+	color: #171717;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.description-text {
+  border-top: solid 1px #c6c6c6;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.description {
+	font-family: Raleway;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #171717;
+  margin: 0 1rem;
+}
+
+.triangle {
+  width: 0.625rem;
+  height: 0.625rem;
 }
