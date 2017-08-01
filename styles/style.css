@@ -30,20 +30,14 @@ html {
   font-weight: normal;
 }
 
-.product-photo {
+.product-slider-photo {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
 }
 
-.photo-current {
-  width: 300px;
-  height: 400px;
-  background-image: url("../images/bitmap.jpg");
-}
-
-.photo-next {
-  width: 20px;
-  background-image: url("../images/Bitmap.png");
+.photo-slider-item {
+  vertical-align: top;
 }
 
 .product-description {
@@ -160,14 +154,31 @@ h2 {
   padding: 2rem 0;
 }
 
-.description-text {
+.dropdown-open, .dropdown-list {
   display: inline-block;
   margin: 0 1rem 2rem 1rem ;
+}
+
+.dropdown-text {
   font-family: Lora;
 	font-size: 0.875rem;
 	line-height: 1.71;
 	color: #171717;
   text-align: left;
+  margin: 0 0 2.8125rem 0;
+}
+
+.dropdown-list {
+  display: block;
+  font-family: Lora;
+	font-size: 0.875rem;
+	line-height: 1.71;
+	color: #171717;
+  text-align: left;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+
 }
 
 .action-disclosure {
