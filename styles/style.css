@@ -145,24 +145,34 @@ h2 {
   padding: 0;
 }
 
-.description-text {
+.product-description-text {
   border-top: solid 1px #c6c6c6;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: solid 1px #c6c6c6;
+}
+
+.action-disclosure {
+	font-family: Raleway;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #171717;
+  margin-left: 1rem;
+}
+
+.product-returns {
+  border-bottom: solid 1px #c6c6c6;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 0;
 }
 
-.description {
-	font-family: Raleway;
-	font-size: 0.875rem;
-	font-weight: 500;
-	color: #171717;
-  margin: 0 1rem;
-}
-
-.triangle {
+.action-triangle {
   width: 0.625rem;
   height: 0.625rem;
+  margin-right: 1rem;
 }
