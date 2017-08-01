@@ -198,10 +198,14 @@ h2 {
   padding: 2rem 0;
 }
 
-.action-triangle {
+.action-triangle, .action-triangle-open {
   width: 0.625rem;
   height: 0.625rem;
   margin-right: 1rem;
+}
+
+.action-triangle-open {
+  transform: rotate(180deg);
 }
 
 .Recommendations {
@@ -222,7 +226,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   justify-content: space-between;
 }
 
