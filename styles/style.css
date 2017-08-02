@@ -21,9 +21,9 @@ body {
 }
 
 .product-name {
+  margin: 1rem 1rem;
   font-size: 1.25rem;
   font-family: 'Lora', serif;
-  margin: 1rem 1rem;
   color:  #111111;
   text-align: left;
   font-weight: normal;
@@ -41,9 +41,9 @@ body {
 }
 
 .product-description {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
   margin-top: 1rem;
 }
 
@@ -66,17 +66,17 @@ h2 {
 }
 
 .product-item {
-  font-size: 0.75rem;
   margin: 0;
   padding-top: 4.49px;
   padding-right: 0.29px;
+  font-size: 0.75rem;
 }
 
 .product-color {
-  font-size: 0.75rem;
-  color: #171717;
   margin: 0;
   padding-top: 2px;
+  font-size: 0.75rem;
+  color: #171717;
 }
 
 .button-color {
@@ -110,31 +110,28 @@ h2 {
   margin: 2rem 1rem 0 1rem;
 }
 
-.action-select {
+.action-select , .action-find {
+  padding-top: 1.09rem;
+  font-family: Raleway;
   border-radius: 0.125rem;
-  background-color: #171717;
-  border: solid 1px #171717;
   font-size: 0.75rem;
   text-align: center;
-  color: #ffffff;
-  font-family: Raleway;
+}
+
+.action-select {
   margin: 2rem 0 1rem 0;
-  text-align: center;
-  padding-top: 1.09rem;
   padding-bottom: 1rem;
+  border: solid 1px #171717;
+  background-color: #171717;
+  color: #ffffff;
 }
 
 .action-find {
-  border: solid 1px #999999;
-  background-color: inherit;
-  border-radius: 0.125rem;
-  font-family: Raleway;
-  font-size: 0.75rem;
-  text-align: center;
-  color: #171717;
   margin-bottom: 1.5rem;
-  padding-top: 1.09rem;
-  padding-bottom: 0.95rem
+  padding-bottom: 0.95rem;
+  border: solid 1px #999999;
+  background-color: transparent;
+  color: #171717;
 }
 
 .action-help {
