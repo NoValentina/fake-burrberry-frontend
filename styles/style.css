@@ -109,31 +109,34 @@ h2 {
   margin: 2rem 1rem 0 1rem;
 }
 
-.btn-action-select, .btn-action-find {
-  padding-top: 1.09rem;
-  font-family: Raleway;
+.btn-action-select {
   border-radius: 0.125rem;
+  background-color: #171717;
+  border: solid 1px #171717;
   font-size: 0.75rem;
   text-align: center;
-}
-
-.btn-action-help {
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 1rem;
-  border: solid 1px #171717;
-  background-color: #171717;
   color: #ffffff;
+  font-family: Raleway;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  padding-top: 1.09rem;
+  padding-bottom: 1rem;
 }
 
 .btn-action-find {
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.95rem;
   border: solid 1px #999999;
-  background-color: transparent;
+  background-color: inherit;
+  border-radius: 0.125rem;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  text-align: center;
   color: #171717;
+  margin-bottom: 1.5rem;
+  padding-top: 1.09rem;
+  padding-bottom: 0.95rem
 }
 
-.action-help {
+.btn-action-help {
   align-self: flex-start;
   font-family: Raleway;
   font-size: 0.75rem;
