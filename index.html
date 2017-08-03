@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,500,700">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -15,16 +15,16 @@
       <h1 class="product-name">Long Cotton Gabardine Car Coat</h1>
       <div class="product-slider">
         <div class="product-slider-item">
-          <img width="300" height="400" src="images/slide1.jpg" alt="Slide 1">
+          <img src="images/slide1.jpg" alt="Slide 1">
         </div>
         <div class="product-slider-item">
-          <img width="300" height="400" src="images/slide2.png" alt="Slide 2">
+          <img src="images/slide2.png" alt="Slide 2">
         </div>
         <div class="product-slider-item">
-          <img width="300" height="400" src="images/slide3.jpg" alt="Slide 3">
+          <img src="images/slide3.jpg" alt="Slide 3">
         </div>
         <div class="product-slider-item">
-          <img width="300" height="400" src="images/slide4.jpg" alt="Slide 4">
+          <img src="images/slide4.jpg" alt="Slide 4">
         </div>
       </div>
     </div>
@@ -34,26 +34,28 @@
         <p class="product-item">Item 39428531</p>
       </div>
       <p class="product-color">Colour: Honey</p>
-      <div class="product-btn-color">
-        <button class="btn-color-dark"></button>
-        <button class="btn-color-light btn-color-active"></button>
+      <div class="product-description-btn">
+        <button class="btn-dark" type="button" title="Color: black"></button>
+        <button class="btn-light btn-active" type="button" title="Color:Honey"></button>
       </div>
     </div>
     <div class="product-btn-actions">
-        <button class="btn-action-select">SELECT A SIZE</button>
-        <button class="btn-action-find">FIND IN STORE</button>
-        <button class="btn-action-help">NEED SIZE HELP?</button>
+      <button class="btn-action-select" type="button" title="SELECT A SIZE">SELECT A SIZE</button>
+      <button class="btn-action-find" type="button" title="FIND IN STORE">FIND IN STORE</button>
+      <button class="btn-action-help" type="button" title="NEED SIZE HELP?">NEED SIZE HELP?</button>
     </div>
     <div class="product-dropdown-descriprion">
       <h2 class="product-dropdown-disclosure">DESCRIPTION</h2>
-      <img class="product-dropdown-open" src="images/Triangle.svg">
+      <div class="product-dropdown-open"></div>
     </div>
     <div class="dropdown-open">
-       <p class="dropdown-open-text">A refined car coat crafted in protective <br> cotton gabardine.<br>
-         Invented by Thomas Burberry in 1879,<br> cotton gabardine is a tightly woven and<br> breathable fabric that protects against wind <br> and rain.<br>
-         Raglan sleeves and a concealed button <br>closure complement the clean tailored<br> lines.<br>
-         The piece is finished with a distinctive <br>check undercollar.</p>
-      <ul class="dropdown-open-list">
+      <div class="dropdown-open-text">
+        <p>A refined car coat crafted in protective cotton gabardine.</p>
+        <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
+        <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
+        <p>The piece is finished with a distinctive check undercollar.</p>
+     </div>
+       <ul class="dropdown-open-list">
         <li class="dropdown-list-item">Сoat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.</li>
         <li class="dropdown-list-item">Outer: 100% cotton</li>
         <li class="dropdown-list-item">Check lining: 100% cotton</li>
@@ -71,10 +73,10 @@
   <div class="recommendations">
     <h2 class="recommendations-header">WE RECOMMEND</h2>
     <div class="recommendations-product">
-      <div class="recommendations-product-descriprion">
-          <img class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
-          <h3 class="recommendations-product-name">Emroided Hooded</h3>
-          <h5 class="recommendations-product-price">27 000 руб</h5>
+      <div class="recommendations-product-description">
+        <img class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
+        <h3 class="recommendations-product-name">Emroided Hooded</h3>
+        <h5 class="recommendations-product-price">27 000 руб</h5>
       </div>
       <div class="recommendations-product-descriprion">
           <img class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/eb872d02449c4050916c9eaf44e266bfdbd32304.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
@@ -106,7 +108,7 @@
       <button class="footer-product-location-country">Shipping country: Russian Federation</button>
       <button class="footer-product-location-language">Language: English</button>
     </div>
-    <div class="footer-information-">
+    <div class="footer-information">
       <h4 class="footer-information-help">Need help?</h4>
       <a class="footer-information-contact">Find out more and contact us</a>
     </div>

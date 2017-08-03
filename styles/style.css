@@ -37,6 +37,8 @@ body {
 
 .product-slider-item img {
   display: block;
+  width:300px;
+  height:400px;
 }
 
 .product-description {
@@ -78,14 +80,14 @@ h2 {
   color: #171717;
 }
 
-.product-btn-color {
+.product-description-btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 1.05rem;
 }
 
-.btn-color-dark, .btn-color-light {
+.btn-dark, .btn-light {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #232122;
@@ -93,12 +95,12 @@ h2 {
   border: none;
 }
 
-.btn-color-light {
+.btn-light {
   background-color: #cfa880;
   margin-left: 1rem;
 }
 
-.btn-color-active {
+.btn-active {
   border: solid 1px #232122;
 }
 
@@ -169,7 +171,11 @@ h2 {
   line-height: 1.72;
   color: #171717;
   text-align: left;
-  margin: 0 0 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin: 0;
 }
 
 .dropdown-open-list {
@@ -182,7 +188,6 @@ h2 {
   padding: 0;
   list-style-type: none;
   margin: 0;
-
 }
 
 .product-dropdown-disclosure {
@@ -212,6 +217,7 @@ h2 {
 .product-dropdown-open {
   padding: 0;
   transform: rotate(180deg);
+  background-image: url("../images/Triangle.svg");
 }
 
 .recommendations {
@@ -250,7 +256,7 @@ h2 {
   justify-content: space-between;
 }
 
-.recommendations-product-descriprion {
+.recommendations-product-description {
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
