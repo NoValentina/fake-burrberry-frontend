@@ -1,9 +1,9 @@
-
 html {
   font-size: 16px;
 }
 
 body {
+  max-width: 320px;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
   margin: 1rem 1rem;
   font-size: 1.25rem;
   font-family: 'Lora', serif;
-  color:  #111111;
+  color: #111111;
   text-align: left;
   font-weight: normal;
   line-height: 1.2;
@@ -37,8 +37,8 @@ body {
 
 .product-slider-item img {
   display: block;
-  width:300px;
-  height:400px;
+  width: 300px;
+  height: 400px;
 }
 
 .product-description {
@@ -80,19 +80,21 @@ h2 {
   color: #171717;
 }
 
-.product-description-btn {
+.product-description-btns {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 1.05rem;
 }
 
-.btn-dark, .btn-light {
+.btn-dark,
+.btn-light {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #232122;
   border-radius: 6.25rem;
   border: none;
+  color: transparent;
 }
 
 .btn-light {
@@ -135,7 +137,7 @@ h2 {
   color: #171717;
   margin-bottom: 1.5rem;
   padding-top: 1.09rem;
-  padding-bottom: 0.95rem
+  padding-bottom: 0.95rem;
 }
 
 .btn-action-help {
@@ -147,37 +149,42 @@ h2 {
   border: none;
   background-color: inherit;
   padding: 0;
-  padding-top: 2px
+  padding-top: 2px;
 }
 
 .product-dropdown-description {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 2.06rem 0;
+  padding-top: 2.06rem;
   margin: 3.05rem 0 0 0;
   border-top: solid 1px #c6c6c6;
 }
 
-.dropdown-open, .dropdown-list {
+.dropdown-open,
+.dropdown-list {
   display: inline-block;
-  margin: 0 1rem 1.95rem 1rem ;
+  margin: 2.06rem 1rem 1.95rem 1rem;
 }
 
- .dropdown-open-text, ul {
+.dropdown-open-text,
+ul {
   font-family: Lora;
   font-size: 0.875rem;
   line-height: 1.72;
   color: #171717;
   text-align: left;
-  margin-bottom: 1.5rem;
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.dropdown-open-text {
+  margin-bottom: 1.5rem;
 }
 
 p {
-  margin:0;
+  margin: 0;
 }
 
 .dropdown-open-list {
@@ -198,22 +205,28 @@ p {
   font-weight: 500;
   color: #171717;
   margin-left: 1rem;
+  position: relative;
+}
+
+.product-dropdown-disclosure:after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 4px;
+  display: block;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-image: url("../images/Triangle.svg");
+}
+
+.product-dropdown-disclosure-open:after {
+  transform: rotate(180deg);
 }
 
 .product-dropdown-shopping {
   border-top: solid 1px #c6c6c6;
   border-bottom: solid 1px #c6c6c6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 2.15rem 0 2rem 0;
-}
-
-.product-dropdown-triangle, .product-dropdown-open {
-  width: 0.625rem;
-  height: 0.625rem;
-  margin-right: 1rem;
-  padding-top: 0.2rem;
 }
 
 .product-dropdown-open {
@@ -272,7 +285,7 @@ p {
 
 .recommendations-product-name {
   margin-top: 0.5rem;
-  font-family: 'Lora',serif;
+  font-family: 'Lora', serif;
   font-size: 1rem;
   color: #171717;
   margin-bottom: 0;
@@ -286,7 +299,7 @@ p {
   color: #999999;
   margin-bottom: 2rem;
   font-weight: normal;
-  padding-top: 1.5px
+  padding-top: 1.5px;
 }
 
 .recommendations-product-list {
@@ -301,7 +314,7 @@ p {
   font-style: italic;
   color: #171717;
   margin-bottom: 1rem;
-  line-height: 1.23
+  line-height: 1.23;
 }
 
 .footer {
@@ -314,7 +327,8 @@ p {
   text-align: left;
 }
 
-.footer-product-location-country, .footer-product-location-language {
+.footer-product-location-country,
+.footer-product-location-language {
   font-family: Raleway;
   font-size: 0.75rem;
   color: #999999;
@@ -342,7 +356,6 @@ p {
   text-align: center;
   margin: 1.45rem 0 1.05rem 0;
   line-height: 1.19;
-
 }
 
 .footer-information-contact {
