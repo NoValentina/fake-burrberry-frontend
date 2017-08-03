@@ -150,7 +150,7 @@ h2 {
   padding-top: 2px
 }
 
-.product-dropdown-descriprion {
+.product-dropdown-description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -165,17 +165,19 @@ h2 {
   margin: 0 1rem 1.95rem 1rem ;
 }
 
-.dropdown-open-text {
+ .dropdown-open-text, ul {
   font-family: Lora;
   font-size: 0.875rem;
   line-height: 1.72;
   color: #171717;
   text-align: left;
   margin-bottom: 1.5rem;
+  list-style-type: none;
+  padding: 0;
 }
 
 p {
-  margin: 0;
+  margin:0;
 }
 
 .dropdown-open-list {
@@ -260,6 +262,7 @@ p {
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
+  text-decoration: none;
 }
 
 .recommendations-product-photo {
