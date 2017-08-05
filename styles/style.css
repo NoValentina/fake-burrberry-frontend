@@ -81,8 +81,8 @@ button:focus {
   margin-top: 1.05rem;
 }
 
-.btn-dark,
-.btn-light {
+.btn-change-colour-to-black,
+.btn-change-colour-to-honey {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #232122;
@@ -91,7 +91,7 @@ button:focus {
   color: transparent;
 }
 
-.btn-light {
+.btn-change-colour-to-honey {
   background-color: #cfa880;
   margin-left: 1rem;
 }
@@ -251,11 +251,6 @@ ul {
   border-bottom: solid 1px #171717;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-}
-
-.recommendations-link {
-  text-decoration: none;
-  color: black;
 }
 
 .recommendations-product-end {
@@ -548,24 +543,26 @@ ul {
     font-weight: bold;
     color: #171717;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 
-  .footer-menu-list-item {
-    margin-bottom: 0.25rem;
-    text-decoration: none;
+  .footer-menu-list {
+    display: flex;
+    flex-direction: column;
   }
 
-  .footer-menu-list-item-link {
+  .footer-menu-list-link {
     text-decoration: none;
     font-family: Raleway;
     font-size: 0.75rem;
     font-weight: 500;
-    line-height: 1.33;
+    line-height: 1.4;
     color: #999999;
+    margin-bottom: 0.75rem;
   }
 
   .footer-product-location {
-    margin-top: 2rem;
+    margin-top: 1.25rem;
   }
 
   .footer-product-location {
