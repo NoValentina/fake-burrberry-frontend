@@ -6,6 +6,10 @@ body {
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+button:focus {
+  outline: none;
+}
+
 .header {
   border-bottom: 1px solid #c6c6c6;
 }
@@ -26,12 +30,6 @@ body {
   text-align: left;
   font-weight: normal;
   line-height: 1.2;
-}
-
-.product-slider {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
 }
 
 .product-slider-item img {
@@ -59,9 +57,6 @@ body {
 .product-price {
   font-size: 1rem;
   font-weight: normal;
-}
-
-h2 {
   margin: 0;
 }
 
@@ -160,6 +155,14 @@ h2 {
   border-top: solid 1px #c6c6c6;
 }
 
+.product-dropdown-button {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-weight: 500;
+  font-family: Raleway;
+}
+
 .dropdown-open,
 .dropdown-list {
   display: inline-block;
@@ -182,7 +185,7 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-p {
+.dropdown-open-text p {
   margin: 0;
 }
 
@@ -203,8 +206,9 @@ p {
   font-size: 1rem;
   font-weight: 500;
   color: #171717;
-  margin-left: 1rem;
   position: relative;
+  margin: 0 0 0 1rem;
+  text-align: left;
 }
 
 .product-dropdown-disclosure:after {
@@ -245,6 +249,7 @@ p {
   font-weight: 500;
   color: #171717;
   border-bottom: solid 1px #171717;
+  margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
@@ -266,6 +271,7 @@ p {
   color: #171717;
   border-bottom: solid 1px #171717;
   padding-bottom: 0.5rem;
+  margin: 0;
 }
 
 .recommendations-product {
@@ -284,8 +290,9 @@ p {
 }
 
 .recommendations-product-photo {
-  width: 8.125rem;
-  height: 10.875rem;
+  width: 100%;
+  /*min-width: 8.125rem;
+  min-height: 10.875rem;*/
 }
 
 .recommendations-product-name {
@@ -320,6 +327,7 @@ p {
   color: #171717;
   margin-bottom: 1rem;
   line-height: 1.23;
+  text-decoration: none;
 }
 
 .footer {
@@ -332,11 +340,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
-.footer-product-location-country,
-.footer-product-location-language {
+.footer-product-location-item {
   font-family: Raleway;
   font-size: 0.75rem;
   color: #999999;
@@ -347,13 +353,8 @@ p {
   border: none;
 }
 
-.footer-product-location-country {
+.footer-product-location-item {
   line-height: 1.33;
-}
-
-.footer-product-location-language {
-  margin-bottom: 0;
-  line-height: 1.17;
 }
 
 .footer-information-help {
@@ -375,6 +376,7 @@ p {
   text-align: center;
   margin: 0;
   line-height: 1.21;
+  text-decoration: none;
 }
 
 .delivery,
@@ -382,7 +384,19 @@ p {
   display: none;
 }
 
-@media (min-width:768px) {
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.product-slider img {
+  display: block;
+  width: 432px;
+  height: 576px;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
   .colomn {
     display: flex;
     flex-direction: column;
@@ -396,14 +410,6 @@ p {
     margin: 1.5rem 0;
     font-size: 1.5rem;
     line-height: 1.17;
-  }
-
-  .product-slider-item img {
-    display: block;
-    width: 432px;
-    height: 576px;
-    margin-right: 0.5rem;
-    padding-left: 0;
   }
 
   .product-description {
@@ -427,6 +433,10 @@ p {
     border: none;
   }
 
+  .product-dropdown-button {
+    padding: 0;
+  }
+
   .dropdown-open {
     margin-top: 1.1rem;
     margin-left: 0;
@@ -434,7 +444,7 @@ p {
   }
 
   .product-dropdown-disclosure {
-    margin-left: 0
+    margin-left: 0;
   }
 
   .product-dropdown-disclosure:after {
@@ -449,9 +459,8 @@ p {
     justify-content: space-around;
   }
 
-  .recommendations-product-photo{
+  .recommendations-product-photo {
     width: 100%;
-    height: 100%;
   }
 
   .recommendations-product-end {
@@ -459,8 +468,7 @@ p {
   }
 
   .delivery {
-  display: block;
-
+    display: block;
   }
 
   .delivery-photo {
@@ -478,7 +486,7 @@ p {
     font-size: 1rem;
     font-weight: 500;
     color: #171717;
-    margin-bottom: 0.9rem;
+    margin: 0 0 0.9rem 0;
   }
 
   .delivery-information-content {
@@ -497,6 +505,7 @@ p {
   }
 
   .delivery-information-content-rubric {
+    margin: 0;
     font-family: Raleway;
     font-size: 0.75rem;
     line-height: 1.33;
@@ -512,8 +521,12 @@ p {
     margin-top: 1rem;
   }
 
+  .recommendations-product-photo {
+  }
+
   .recommendations-header {
-    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
   }
 
   .footer {
@@ -538,13 +551,17 @@ p {
   }
 
   .footer-menu-list-item {
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+  }
+
+  .footer-menu-list-item-link {
+    text-decoration: none;
     font-family: Raleway;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.33;
     color: #999999;
-    text-decoration: none;
-    margin-bottom: 0.75rem;
   }
 
   .footer-product-location {
@@ -555,12 +572,11 @@ p {
     flex-direction: row;
   }
 
-  .footer-product-location-country{
+  .footer-product-location-item {
     margin-right: 1.5rem;
   }
 }
 
-  .
 /*
   .container {
     padding: 0 0.5rem;
@@ -571,5 +587,3 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
   }*/
-
-}
