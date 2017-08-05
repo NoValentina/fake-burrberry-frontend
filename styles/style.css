@@ -81,8 +81,7 @@ button:focus {
   margin-top: 1.05rem;
 }
 
-.btn-change-colour-to-black,
-.btn-change-colour-to-honey {
+.btn-change-colour {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #232122;
@@ -91,7 +90,7 @@ button:focus {
   color: transparent;
 }
 
-.btn-change-colour-to-honey {
+.btn-light {
   background-color: #cfa880;
   margin-left: 1rem;
 }
@@ -559,6 +558,10 @@ ul {
     line-height: 1.4;
     color: #999999;
     margin-bottom: 0.75rem;
+  }
+
+  .footer-menu-list-link abbr {
+    text-decoration: none;
   }
 
   .footer-product-location {
