@@ -1,15 +1,226 @@
 <!DOCTYPE html>
-<html>
-   <head>
-     <meta charset="utf-8" content="width-device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="styles/style.css">
-   </head>
-   <header>
-     <img class ="description_header"src="images/logo.svg">
-     <h1 class="description_h1">Long Cotton Gabardine Car Coat</h1>
-   </header>
-      <body>
-        <div>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:400,500,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img alt="логотип" class="header-logo" src="images/Logo.svg">
+    </a>
+  </header>
+
+  <section class="container">
+    <div class="product">
+      <h1 class="product-name">Long Cotton Gabardine Car Coat</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <div class="product-slider">
+            <img alt="одежда" src="images/bitmap@3x.jpg" alt="Slide 1">
+            <img alt="одежда" src="images/slide2.png" alt="Slide 2">
+            <img alt="одежда" src="images/slide3.jpg" alt="Slide 3">
+            <img alt="одежда" src="images/slide4.jpg" alt="Slide 4">
+          </div>
         </div>
-      </body>
-      </html>
+        <div class="col-xs-12 col-md-5">
+          <div class="product-description ">
+            <div class="product-description-properties">
+              <h2 class="product-price">110 000 руб</h2>
+              <p class="product-item">Item 39428531</p>
+            </div>
+            <p class="product-colour">Colour: Honey</p>
+            <div class="product-description-btns">
+              <button class="btn-change-colour" type="button">Change colour to black</button>
+              <button class="btn-change-colour btn-light btn-active" type="button">Change colour to honey</button>
+            </div>
+          </div>
+          <div class="product-btn-actions">
+            <button class="btn-action-select" type="button" title="SELECT A SIZE">SELECT A SIZE</button>
+            <button class="btn-action-find" type="button" title="FIND IN STORE">FIND IN STORE</button>
+            <button class="btn-action-help" type="button" title="NEED SIZE HELP?">NEED SIZE HELP?</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-dropdown-description">
+        <h2 class="product-dropdown-disclosure product-dropdown-disclosure-open">
+          <button class="product-dropdown-button">
+            DESCRIPTION
+          </button>
+        </h2>
+        <div class="dropdown-open">
+          <div class="dropdown-open-text">
+            <p>A refined car coat crafted in protective cotton gabardine.</p>
+            <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
+            <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
+            <p>The piece is finished with a distinctive check undercollar.</p>
+          </div>
+          <ul>
+            <li>Сoat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.</li>
+            <li>Outer: 100% cotton</li>
+            <li>Check lining: 100% cotton</li>
+            <li>Sleeve lining: 100% viscose</li>
+            <li>Buttons: buffalo horn</li>
+            <li>Specialist dry clean</li>
+            <li>Made in Europe</li>
+            <li>Item 39428531</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="product-dropdown-shopping">
+    <h2 class="product-dropdown-disclosure">
+      <button class="product-dropdown-button">
+        SHIPPING & RETURNS
+      </button>
+    </h2>
+  </div>
+  <div class="container">
+    <div class="delivery">
+      <div class="row">
+        <img alt="доставка" src="images/delivery@3x.png" class="delivery-photo col-md-7" />
+        <div class="delivery-information col-md-5">
+          <h2 class="delivery-information-header">DELIVERY</h2>
+          <div class="delivery-information-content">
+            <h3 class="delivery-information-content-name">Free Next Day Delivery</h3>
+            <p class="delivery-information-content-rubric">Order before 7pm Monday to Thursday for delivery the next day</p>
+          </div>
+          <div class="delivery-information-content">
+            <h3 class="delivery-information-content-name">Collect-in-Store</h3>
+            <p class="delivery-information-content-rubric">Order online today and pick up your items in store as early as tomorrow</p>
+          </div>
+          <div class="delivery-information-content">
+            <h3 class="delivery-information-content-name">Free Returns</h3>
+            <p class="delivery-information-content-rubric">Enjoy free returns on your order</p>
+          </div>
+          <div class="delivery-information-content">
+            <h3 class="delivery-information-content-name">Free Gift Packaging</h3>
+            <p class="delivery-information-content-rubric">Discover our gift packaging, a gold lined box tied with a coloured ribbon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recommendations">
+    <div class="recommendations-product">
+      <div class="container">
+        <h2 class="recommendations-header">
+          WE RECOMMEND
+        </h2>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a class="recommendations-product-description" href="index.html">
+              <img alt="товар" class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
+              <h3 class="recommendations-product-name">Emroided Hooded</h3>
+              <h5 class="recommendations-product-price">27 000 руб</h5>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a class="recommendations-product-description" href="index.html">
+              <img alt="товар" class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/eb872d02449c4050916c9eaf44e266bfdbd32304.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
+              <h3 class="recommendations-product-name">Relaxed Fit Stretch Jeans</h3>
+              <h5 class="recommendations-product-price">22 500 руб</h5>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a class="recommendations-product-description" href="index.html">
+              <img alt="товар" class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/cfaeb1b3c79aeee09dfda4e26a9fb3f4525df542.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195">
+              <h3 class="recommendations-product-name">Leather and House Check</h3>
+              <h5 class="recommendations-product-price">120 000 руб</h5>
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a class="recommendations-product-description" href="index.html">
+              <img alt="товар" class="recommendations-product-photo" src="https://assets.burberry.com/is/image/Burberryltd/b33127f06e6c404cc3168645e099a9eb71aeca9c.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195">
+              <h3 class="recommendations-product-name">Leather Wingtip Check</h3>
+              <h5 class="recommendations-product-price">46 000 руб</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="recommendations-product-end">
+    <div class="container">
+      <h2 class="recommendations-header-additionally">
+        <a class="recommendations-link" href="#">MORE FOR YOU</a>
+      </h2>
+      <div class="recommendations-product-list">
+        <a href="#" class="recommendations-product-list-item">Men’s Black Trench Coats</a>
+        <a href="#" class="recommendations-product-list-item">Men’s Short Trench Coats</a>
+        <a href="#" class="recommendations-product-list-item">Men’s Long Trench Coats</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <nav class="footer-menu-list">
+              <h3 class="footer-menu-list-name">CUSTOMER SERVICE</h3>
+              <a class="footer-menu-list-link" href="#">Contact Us</a>
+              <a class="footer-menu-list-link" href="#">Payment</a>
+              <a class="footer-menu-list-link" href="#">Shipping</a>
+              <a class="footer-menu-list-link" href="#">Returns</a>
+              <a class="footer-menu-list-link" href="#">Faqs</a>
+              <a class="footer-menu-list-link" href="#">Live Chat</a>
+              <a class="footer-menu-list-link" href="#">The Burberry App</a>
+              <a class="footer-menu-list-link" href="#">Store Locator</a>
+            </nav>
+          </div>
+          <div class="col-sm-3">
+            <nav class="footer-menu-list">
+              <h3 class="footer-menu-list-name">OUR COMPANY</h3>
+              <a class="footer-menu-list-link" href="#">Our History</a>
+              <a class="footer-menu-list-link" href="#">Burberry Group Plc</a>
+              <a class="footer-menu-list-link" href="#">Careers</a>
+              <a class="footer-menu-list-link" href="#">Corporate Responsibility</a>
+              <a class="footer-menu-list-link" href="#">Site Map</a>
+            </nav>
+          </div>
+          <div class="col-sm-3">
+            <nav class="footer-menu-list">
+              <h3 class="footer-menu-list-name">LEGAL & COOKIES</h3>
+              <a class="footer-menu-list-link" href="#">Terms & Conditions</a>
+              <a class="footer-menu-list-link" href="#">Privacy Policy</a>
+              <a class="footer-menu-list-link" href="#">Cookie Policy</a>
+              <a class="footer-menu-list-link" href="#">Accessibility Statement</a>
+              <a class="footer-menu-list-link" href="#">
+                Japan Only -
+                <abbr title="Single-Cycle Timed Loop">SCTL</abbr> indications
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer-product-location">
+        <button class="footer-product-location-item">Shipping country: Russian Federation</button>
+        <button class="footer-product-location-item">Language: English</button>
+      </div>
+    </div>
+    <div class="footer-information">
+      <h4 class="footer-information-help">Need help?</h4>
+      <a href="#" class="footer-information-contact">Find out more and contact us</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>
