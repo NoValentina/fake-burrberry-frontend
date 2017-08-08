@@ -10,18 +10,6 @@ button:focus {
   outline: none;
 }
 
-.header {
-  border-bottom: 1px solid #c6c6c6;
-}
-
-.header-logo {
-  display: block;
-  width: 138px;
-  height: 10px;
-  padding: 1rem 0 1rem 0;
-  margin: 0 auto;
-}
-
 .product-name {
   margin: 1rem 1rem;
   font-size: 1.25rem;
@@ -218,7 +206,7 @@ ul {
   display: block;
   width: 0.625rem;
   height: 0.625rem;
-  background-image: url("../images/Triangle.svg");
+  background-image: url("./images/Triangle.svg");
 }
 
 .product-dropdown-disclosure-open:after {
@@ -234,7 +222,7 @@ ul {
 .product-dropdown-open {
   padding: 0;
   transform: rotate(180deg);
-  background-image: url("../images/Triangle.svg");
+  background-image: url("./images/Triangle.svg");
 }
 
 .recommendations {
@@ -285,8 +273,6 @@ ul {
 
 .recommendations-product-photo {
   width: 100%;
-  /*min-width: 8.125rem;
-  min-height: 10.875rem;*/
 }
 
 .recommendations-product-name {
@@ -324,57 +310,7 @@ ul {
   text-decoration: none;
 }
 
-.footer {
-  margin-top: 3rem;
-  background-color: #f3f3f3;
-  padding: 1.85rem 1rem;
-}
-
-.footer-product-location {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-product-location-item {
-  font-family: Raleway;
-  font-size: 0.75rem;
-  color: #999999;
-  font-weight: normal;
-  margin: 0 0 1rem 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-.footer-product-location-item {
-  line-height: 1.33;
-}
-
-.footer-information-help {
-  font-family: Raleway;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #171717;
-  text-align: center;
-  margin: 0.45rem 0 1.05rem 0;
-  line-height: 1.19;
-}
-
-.footer-information-contact {
-  display: block;
-  font-family: Lora;
-  font-size: 0.875rem;
-  font-style: italic;
-  color: #171717;
-  text-align: center;
-  margin: 0;
-  line-height: 1.21;
-  text-decoration: none;
-}
-
-.delivery,
-.footer-menu {
+.delivery {
   display: none;
 }
 
@@ -394,10 +330,6 @@ ul {
   .colomn {
     display: flex;
     flex-direction: column;
-  }
-
-  .header-logo {
-    padding: 1.5rem 0 1.5rem 0;
   }
 
   .product-name {
@@ -522,68 +454,4 @@ ul {
     margin-bottom: 1rem;
     margin-top: 0;
   }
-
-  .footer {
-    margin: 2rem 0 0 0;
-    padding: 2rem 0 0 0;
-  }
-
-  .footer-menu {
-    display: block;
-  }
-
-  .footer-information {
-    display: none;
-  }
-
-  .footer-menu-list-name {
-    font-family: Raleway;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #171717;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-
-  .footer-menu-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-menu-list-link {
-    text-decoration: none;
-    font-family: Raleway;
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: #999999;
-    margin-bottom: 0.75rem;
-  }
-
-  .footer-menu-list-link abbr {
-    text-decoration: none;
-  }
-
-  .footer-product-location {
-    margin-top: 1.25rem;
-  }
-
-  .footer-product-location {
-    flex-direction: row;
-  }
-
-  .footer-product-location-item {
-    margin-right: 1.5rem;
-  }
 }
-
-/*
-  .container {
-    padding: 0 0.5rem;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }*/
