@@ -1,0 +1,138 @@
+.product-name {
+  margin: 1rem 1rem;
+  font-size: 1.25rem;
+  font-family: 'Lora', serif;
+  color: #111111;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.product-description-properties {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-top: 1px;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.product-item {
+  margin: 0;
+  padding-top: 4.49px;
+  padding-right: 0.29px;
+  font-size: 0.75rem;
+}
+
+.product-colour {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 0.75rem;
+  color: #171717;
+}
+
+.product-description-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1.05rem;
+}
+
+.btn-change-colour {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #232122;
+  border-radius: 6.25rem;
+  border: none;
+  color: transparent;
+}
+
+.btn-light {
+  background-color: #cfa880;
+  margin-left: 1rem;
+}
+
+.btn-active {
+  border: solid 1px #232122;
+}
+
+.product-btn-actions {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px #c6c6c6;
+  margin: 2rem 1rem 0 1rem;
+}
+
+.btn-action-select {
+  border-radius: 0.125rem;
+  background-color: #171717;
+  border: solid 1px #171717;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Raleway;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  padding-top: 1.09rem;
+  padding-bottom: 1rem;
+}
+
+.btn-action-find {
+  border: solid 1px #999999;
+  background-color: inherit;
+  border-radius: 0.125rem;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #171717;
+  margin-bottom: 1.5rem;
+  padding-top: 1.09rem;
+  padding-bottom: 0.95rem;
+}
+
+.btn-action-help {
+  align-self: flex-start;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #171717;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  padding-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .product-name {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.17;
+  }
+
+  .product-description {
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-price {
+    line-height: 1.19;
+  }
+
+  .product-btn-actions {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
