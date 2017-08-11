@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from './Card';
 
-const cards = [{
+const products = [{
   photo: "https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195",
   name: 'Emroided Hooded',
   price: 27000
@@ -23,12 +23,12 @@ const cards = [{
 const Cards = () => {
   return (
     <div className="row">
-      {cards.map((item, num) =>
+      {products.map((product, num) =>
         <div className="col-xs-6 col-md-3" key={num}>
           <Card
-            photo={ item.photo }
-            name={ item.name }
-            price={ item.price }
+            photo={ product.photo }
+            name={ product.name }
+            price={ product.price }
           />
         </div>
       )}
