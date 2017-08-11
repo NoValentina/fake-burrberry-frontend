@@ -7,13 +7,11 @@ const Header = styled.h2`
   font-size: 1rem;
   font-weight: 500;
   color: #171717;
-  border-bottom: solid 1px #171717;
-  padding-bottom: 0.5rem;
   margin: 0;
 `
 
 const List = styled.div`
-  margin-top: 1.53rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 `

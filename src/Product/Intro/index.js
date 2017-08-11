@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
+
 
 //components
 import Slider from './Slider';
@@ -25,6 +27,9 @@ class ProductIntro extends Component {
   render() {
     return (
       <section className="container">
+        <Helmet>
+          <title>Long Cotton Gabardine Car Coat</title>
+        </Helmet>
         <Name>Long Cotton Gabardine Car Coat</Name>
         <div className="row">
           <div className="col-xs-12 col-md-7">

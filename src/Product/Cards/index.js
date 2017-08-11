@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Card from './Card';
 
-const Cards = [
+const RecommendCards = [
   {
     photo: "https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195",
     name: 'Emroided Hooded',
@@ -28,10 +28,10 @@ const Cards = [
   }
 ];
 
-export default () => {
+const Cards = () => {
   return (
     <div className="row">
-      {Cards.map((item,num) =>
+      {RecommendCards.map((item, num) =>
         <div className="col-xs-6 col-md-3" key={num}>
           <Card
             photo={ item.photo }
@@ -43,3 +43,5 @@ export default () => {
     </div>
   )
 }
+
+export default Cards;

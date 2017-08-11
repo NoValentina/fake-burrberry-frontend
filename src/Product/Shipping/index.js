@@ -17,7 +17,7 @@ function ProductShipping() {
   return (
     <div className="container">
       <Shipping>
-        <DropDown>SHIPPING & RETURNS</DropDown>
+        <DropDown>DELIVERY</DropDown>
       </Shipping>
     </div>
   )

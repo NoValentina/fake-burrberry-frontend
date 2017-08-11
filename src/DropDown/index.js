@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import triangle from './../Triangle.svg'
+const triangle = process.env.PUBLIC_URL + '/images/Triangle.svg';
 
 const DropDown = (props) => {
   const Button = styled.button`

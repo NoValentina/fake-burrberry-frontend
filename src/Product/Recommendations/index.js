@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import Cards from '../Cards';
@@ -19,13 +19,13 @@ const Header = styled.h2`
   font-size: 1rem;
   font-weight: 500;
   color: #171717;
-  border-bottom: solid 1px #171717;
   margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 1rem;
+    border-bottom: solid 1px #171717;
     margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 `
 const RecommendMore = styled.div`
@@ -36,25 +36,24 @@ const RecommendMore = styled.div`
   }
 `
 
-class Recommendations extends Component {
-  render() {
-    return (
-      <div>
-        <Recommends>
-          <div className="container">
-            <Header >
-              WE RECOMMEND
-            </Header>
-            <Cards />
-          </div>
-        </Recommends>
+function Recommendations() {
+  return (
+    <div>
+      <Recommends>
+        <div className="container">
+          <Header >
+            WE RECOMMEND
+          </Header>
+          <Cards />
+        </div>
+      </Recommends>
 
-        <RecommendMore>
-          <More />
-        </RecommendMore>
-      </div>
-    )
-  }
+      <RecommendMore>
+        <More />
+      </RecommendMore>
+    </div>
+  )
 }
+
 
 export default Recommendations;
