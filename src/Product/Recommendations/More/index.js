@@ -35,13 +35,13 @@ const Link = styled.a`
 	color: #171717;
 `
 
-function More() {
+const More = () => {
   return (
     <div className="container">
       <Header>
         <Link href="#">MORE FOR YOU</Link>
       </Header>
-      <List >
+      <List>
         <Item href="#">Men’s Black Trench Coats</Item>
         <Item href="#">Men’s Short Trench Coats</Item>
         <Item href="#">Men’s Long Trench Coats</Item>

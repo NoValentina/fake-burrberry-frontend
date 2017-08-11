@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import DropDown from '../../DropDown';
+import Expand from '../../Expand';
 
 const Shipping = styled.div`
   border-top: solid 1px #c6c6c6;
@@ -13,11 +13,11 @@ const Shipping = styled.div`
   }
 `
 
-function ProductShipping() {
+const ProductShipping = () => {
   return (
     <div className="container">
       <Shipping>
-        <DropDown>DELIVERY</DropDown>
+        <Expand>DELIVERY</Expand>
       </Shipping>
     </div>
   )

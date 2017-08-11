@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-
-import DropDown from '../../DropDown';
+import Expand from '../../Expand';
 import Text from './Text';
 
 const description = `
-  <div className="dropdown-open-text">
-    <p>A refined car coat crafted in protective cotton gabardine.</p>
-    <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
-    <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
-    <p>The piece is finished with a distinctive check undercollar.</p>
-  </div>
+  <p>A refined car coat crafted in protective cotton gabardine.</p>
+  <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
+  <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
+  <p>The piece is finished with a distinctive check undercollar.</p>
   <ul>
     <li>Сoat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.</li>
     <li>Outer: 100% cotton</li>
@@ -41,19 +38,17 @@ const Description = styled.div`
 `
 
 
-class ProductDescription extends Component {
-  render() {
-    return (
-      <section className="container">
-        <div className="row">
-          <Description>
-            <DropDown open>DESCRIPTION</DropDown>
-            <Text description={description} />
-          </Description>
-        </div>
-      </section>
-    )
-  }
+const ProductDescription = () => {
+  return (
+    <section className="container">
+      <div className="row">
+        <Description>
+          <Expand open>DESCRIPTION</Expand>
+          <Text description={description} />
+        </Description>
+      </div>
+    </section>
+  )
 }
 
 export default ProductDescription;

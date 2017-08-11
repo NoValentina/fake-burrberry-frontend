@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-const BtnActions = styled.div `
+const BtnActions = styled.div`
   display: flex;
   flex-direction: column;
   border-top: solid 1px #c6c6c6;
   margin: 2rem 1rem 0 1rem;
+
   @media (min-width: 768px) {
-      margin-left: 0;
-      margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 `
 
@@ -26,7 +27,7 @@ const Select = styled.button`
   padding-bottom: 1rem;
 `
 
-const Find = styled.button `
+const Find = styled.button`
   border: solid 1px #999999;
   background-color: inherit;
   border-radius: 0.125rem;
@@ -39,7 +40,7 @@ const Find = styled.button `
   padding-bottom: 0.95rem;
 `
 
-const Help = styled.button `
+const Help = styled.button`
   align-self: flex-start;
   font-family: Raleway;
   font-size: 0.75rem;
@@ -51,8 +52,7 @@ const Help = styled.button `
   padding-top: 2px;
 `
 
-
-function Actions() {
+const Actions = () => {
   return (
     <BtnActions>
       <Select type="button" title="SELECT A SIZE">SELECT A SIZE</Select>

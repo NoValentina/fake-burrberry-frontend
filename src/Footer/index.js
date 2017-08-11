@@ -25,7 +25,7 @@ const Location = styled.div `
   }
 `
 
-const Item = styled.button ` {
+const Item = styled.button`
   font-family: Raleway;
   font-size: 0.75rem;
   color: #999999;
@@ -39,14 +39,13 @@ const Item = styled.button ` {
   @media (min-width: 768px) {
     margin-right: 1.5rem;
   }
-}
 `
-const Information = styled.div `
+const Information = styled.div`
   @media (min-width: 768px) {
     display: none;
   }
 `
-const Help = styled.h4 `
+const Help = styled.h4`
   font-family: Raleway;
   font-size: 1rem;
   font-weight: bold;
@@ -55,7 +54,7 @@ const Help = styled.h4 `
   margin: 0.45rem 0 1.05rem 0;
   line-height: 1.19;
 `
-const Contact = styled.a `
+const Contact = styled.a`
   display: block;
   font-family: Lora;
   font-size: 0.875rem;
@@ -67,7 +66,7 @@ const Contact = styled.a `
   text-decoration: none;
 `
 
-function Footer() {
+const Footer = () => {
   return (
     <Bottom>
       <div className="container">

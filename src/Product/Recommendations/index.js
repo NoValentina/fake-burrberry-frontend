@@ -31,19 +31,18 @@ const Header = styled.h2`
 const RecommendMore = styled.div`
   margin-top: 0.89rem;
   margin-left: 1rem;
+
   @media (min-width: 768px) {
     display: none;
   }
 `
 
-function Recommendations() {
+const Recommendations = () => {
   return (
     <div>
       <Recommends>
         <div className="container">
-          <Header >
-            WE RECOMMEND
-          </Header>
+          <Header>WE RECOMMEND</Header>
           <Cards />
         </div>
       </Recommends>

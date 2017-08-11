@@ -1,44 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-const FooterMenu = styled.div `
+const FooterMenu = styled.div`
   display: none;
 
   @media (min-width: 768px) {
     display: block;
   }
-  `
+`
 
-  const ListName = styled.h3`
-    font-family: Raleway;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: #171717;
-    margin-top: 0;
-    margin-bottom: 1rem;
-  `
+const ListName = styled.h3`
+  font-family: Raleway;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #171717;
+  margin-top: 0;
+  margin-bottom: 1rem;
+`
 
-  const List = styled.nav`
-    display: flex;
-    flex-direction: column;
-  `
+const List = styled.nav`
+  display: flex;
+  flex-direction: column;
+`
 
-  const Link = styled.a `
-    text-decoration: none;
-    font-family: Raleway;
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: #999999;
-    margin-bottom: 0.75rem;
-  `
+const Link = styled.a`
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #999999;
+  margin-bottom: 0.75rem;
+`
 
-  const Linkabbr = styled.a`
-    text-decoration: none;
-  `
+const Linkabbr = styled.abbr`
+  text-decoration: none !important;
+`
 
-
-function Navigation() {
+const Navigation = () => {
   return (
     <FooterMenu>
       <div className="row">

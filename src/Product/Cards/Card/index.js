@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import NumberFormat from 'react-number-format';
@@ -32,23 +32,21 @@ const Price = styled.h5`
   padding-top: 1.5px;
 `
 
-class Card extends Component {
-  render() {
-    return (
-      <Link href="index.html">
-        <Photo src={this.props.photo} alt={this.props.name}/>
-        <Name>{this.props.name}</Name>
-        <Price>
-          <NumberFormat
-            value={this.props.price}
-            suffix={' руб. '}
-            thousandSeparator={' '}
-            displayType={'text'}
-          />
-        </Price>
-      </Link>
-    )
-  }
+const Card = (props) => {
+  return (
+    <Link href="index.html">
+      <Photo src={props.photo} alt={props.name}/>
+      <Name>{props.name}</Name>
+      <Price>
+        <NumberFormat
+          value={props.price}
+          suffix={' руб.'}
+          thousandSeparator={' '}
+          displayType={'text'}
+        />
+      </Price>
+    </Link>
+  )
 }
 
 export default Card;
