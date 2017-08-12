@@ -17,6 +17,12 @@ const HeaderLogo = styled.img`
   @media (min-width: 768px) {
     padding: 1.5rem 0 1.5rem 0;
   }
+
+  @media (min-width: 1200px) {
+    width: 221px;
+    height: 16px;
+    padding: 2rem 0;
+  }
 `
 
 const Link = styled.a`

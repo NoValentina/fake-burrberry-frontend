@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Text = styled.div`
   display: inline-block;
@@ -11,7 +11,8 @@ const Text = styled.div`
     margin-bottom: 1.5rem;
   }
 
-  ul, p {
+  ul,
+  p {
     font-family: Lora;
     font-size: 0.875rem;
     line-height: 1.72;
@@ -25,8 +26,22 @@ const Text = styled.div`
   ul {
     margin-top: 1.5rem;
   }
-`
+`;
 
-export default (props) => (
-  <Text dangerouslySetInnerHTML={{ __html: props.description }} />
-)
+/*const Title = styled.h2`
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #171717;
+    pa
+  }
+`;*/
+
+export default props =>
+  <div>
+    <Text dangerouslySetInnerHTML={{ __html: props.description }} />
+  </div>;
