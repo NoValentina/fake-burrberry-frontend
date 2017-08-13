@@ -11,7 +11,7 @@ const Buttons = styled.div`
 export default props =>
   <Buttons>
     {props.sizes.map((size, id) =>
-      <Button key={id} selected={props.selectedSize === size}>
+      <Button key={id} selected={props.selectedSize === id}>
         {size}
       </Button>
     )}

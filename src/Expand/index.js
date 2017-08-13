@@ -21,12 +21,19 @@ const Heading = styled.h2`
   font-weight: 500;
   color: #171717;
   position: relative;
-  margin: 0 0 0 1rem;
+  margin: 0;
   text-align: left;
+  margin-left: 0.5rem;
 
-  @media (min-width: 1200px) {
-    margin-top: 4rem;
+  @media (min-width: 768px) {
+    border-top: none;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
     margin-left: 0.5rem;
+    padding-top: 0;
+    margin-top: 4rem;
   }
 
   &::after {

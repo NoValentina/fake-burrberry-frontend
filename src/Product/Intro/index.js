@@ -3,9 +3,13 @@ import styled from "styled-components";
 import Helmet from "react-helmet";
 
 //components
+import { XS, LG, MD } from "./../../common";
 import Slider from "./Slider";
 import Actions from "./Actions";
 import Properties from "./Properties";
+import About from "../Large/About";
+
+const ImagePr = process.env.PUBLIC_URL + "/images/bitmap@3x.jpg";
 
 const Name = styled.h1`
   margin: 1rem 1rem;
@@ -22,8 +26,6 @@ const Name = styled.h1`
     line-height: 1.17;
   }
 `;
-
-const Intro = styled.div`@media (min-width: 1200px) {display: none;}`;
 
 const Help = styled.button`
   align-self: flex-start;
@@ -55,31 +57,55 @@ const BtnActions = styled.div`
   }
 `;
 
+const ImageProduct = styled.img`
+  display: block;
+  width: 488px;
+  height: 651px;
+`;
+
+const Background = styled.div`background-color: #d4bdad;`;
+
 const ProductIntro = () => {
   return (
-    <Intro>
-      <section className="container">
-        <Helmet>
-          <title>Long Cotton Gabardine Car Coat</title>
-        </Helmet>
-        <Name>Long Cotton Gabardine Car Coat</Name>
-        <div className="row">
-          <div className="col-xs-12 col-md-7">
-            <Slider />
+    <div>
+      <Helmet>
+        <title>Long Cotton Gabardine Car Coat</title>
+      </Helmet>
+      <MD>
+        <section className="container">
+          <Name>Long Cotton Gabardine Car Coat</Name>
+          <div className="row">
+            <div className="col-xs-12 col-md-7">
+              <Slider />
+            </div>
+            <div className="col-xs-12 col-md-5">
+              <Properties />
+              <BtnActions>
+                <Actions primary>SELECT A SIZE</Actions>
+                <Actions>FIND IN STORE</Actions>
+                <Help type="button" title="NEED SIZE HELP?">
+                  NEED SIZE HELP?
+                </Help>
+              </BtnActions>
+            </div>
           </div>
-          <div className="col-xs-12 col-md-5">
-            <Properties />
-            <BtnActions>
-              <Actions dark>SELECT A SIZE</Actions>
-              <Actions>FIND IN STORE</Actions>
-              <Help type="button" title="NEED SIZE HELP?">
-                NEED SIZE HELP?
-              </Help>
-            </BtnActions>
-          </div>
-        </div>
-      </section>
-    </Intro>
+        </section>
+      </MD>
+      <LG>
+        <Background>
+          <section className="container-fluid">
+            <div className="row">
+              <div className="col-lg-6">
+                <ImageProduct alt="одежда" src={ImagePr} />
+              </div>
+              <div className="col-lg-6">
+                <About />
+              </div>
+            </div>
+          </section>
+        </Background>
+      </LG>
+    </div>
   );
 };
 

@@ -1,22 +1,19 @@
-import React from 'react';
+import React from "react";
 
 // components
-import Intro from './Intro';
-import Description from './Description';
-import Shipping from './Shipping';
-import Delivery from './Delivery';
-import Recommendations from './Recommendations';
-import IntroDesktop from './IntroDesktop';
+import Intro from "./Intro";
+import Description from "./Description";
+import Shipping from "./Shipping";
+import Delivery from "./Delivery";
+import Recommendations from "./Recommendations";
 
-const Product = () => (
+const Product = () =>
   <div>
     <Intro />
-    <IntroDesktop />
     <Description />
     <Shipping />
     <Delivery />
     <Recommendations />
-  </div>
-)
+  </div>;
 
 export default Product;

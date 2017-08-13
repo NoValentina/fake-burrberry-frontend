@@ -55,10 +55,10 @@ const About = () =>
       </div>
     </div>
     <Buttons>
-      <Actions dark desktop>
+      <Actions primary small>
         ADD TO BAG
       </Actions>
-      <Actions desktop>FIND IN STORE</Actions>
+      <Actions small>FIND IN STORE</Actions>
     </Buttons>
     <Delivery>
       <Title>Free Next Day Delivery</Title>

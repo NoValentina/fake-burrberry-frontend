@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Buttons from "../Buttons";
-import LinkHelp from "../LinkHelp";
+import Help from "../Help";
 
 const sizes = ["S", "M", "L", "XL"];
 
@@ -35,8 +35,7 @@ export default () =>
       <Label>
         Size: <b>XL</b>
       </Label>
-      <LinkHelp />
+      <Help />
     </Header>
-
-    <Buttons sizes={sizes} selectedSize="XL" />
+    <Buttons sizes={sizes} selectedSize={3} />
   </Size>;

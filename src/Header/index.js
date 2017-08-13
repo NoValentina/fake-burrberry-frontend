@@ -1,15 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import logo from './Logo.svg';
+import logo from "./Logo.svg";
 
-const Head = styled.header`
-  border-bottom: 1px solid #c6c6c6;
-`
+const Head = styled.header`border-bottom: 1px solid #c6c6c6;`;
 
 const HeaderLogo = styled.img`
   display: block;
-  width: 138px;
   height: 10px;
   padding: 1rem 0 1rem 0;
   margin: 0 auto;
@@ -19,15 +16,12 @@ const HeaderLogo = styled.img`
   }
 
   @media (min-width: 1200px) {
-    width: 221px;
     height: 16px;
     padding: 2rem 0;
   }
-`
+`;
 
-const Link = styled.a`
-  text-decoration: none;
-`
+const Link = styled.a`text-decoration: none;`;
 
 function Header() {
   return (
@@ -36,7 +30,7 @@ function Header() {
         <HeaderLogo alt="логотип" src={logo} />
       </Link>
     </Head>
-  )
+  );
 }
 
 export default Header;

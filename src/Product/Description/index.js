@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import { XS, LG, MD } from "./../../common";
 import Expand from "../../Expand";
 import Text from "./Text";
 
@@ -27,26 +28,6 @@ const description = `
   </ul>
 `;
 
-/*const Description = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2.06rem;
-  margin: 3.05rem 0 0 0;
-  border-top: solid 1px #c6c6c6;
-
-  @media (min-width: 768px) {
-    padding-bottom: 0;
-    margin-top: 1.6rem;
-    padding-top: 0;
-    border: none;
-  }
-
-  @media (min-width: 1200px) {
-    margin-top: 4rem;
-  }
-`;*/
-
 const Image = styled.img`
   width: 100%;
   margin-top: 4rem;
@@ -61,62 +42,73 @@ const DesktopDes = styled.div`
   }
 `;
 
-const Photo1 = styled.img`
-  width: 315px;
-  display: block;
-  margin-top: 2rem;
-`;
-
-const Photo2 = styled.img`
-  width: 315px;
-  display: block;
-  margin-top: 6rem;
-`;
-
-const Photo3 = styled.img`
-  width: 315px;
+const Photo = styled.img`
+  width: 100%;
+  max-width: 315px;
   display: block;
 `;
 
 const Photos = styled.div`
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4rem 0;
+  width: 100%;
 
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 4rem 0;
-    width: 100%;
+  div:nth-child(1) {
+    padding-top: 2rem;
+  }
+
+  div:nth-child(2) {
+    padding-top: 6rem;
+  }
+`;
+
+const Description = styled.div`
+  margin-top: 2rem;
+  border-top: solid 1px #c6c6c6;
+  padding-top: 2rem;
+
+  @media (min-width: 758px) {
+    border-top: none;
+    margin-top: 1.5rem;
+    padding-top: 0;
   }
 `;
 
 const ProductDescription = () => {
   return (
-    <section className="container">
-      <div className="row">
-        <div className="col-lg-4">
-          <Expand open>DESCRIPTION</Expand>
-          <Text description={description} />
+    <Description>
+      <section className="container">
+        <div className="row">
+          <div className="col-lg-4">
+            <Expand open>DESCRIPTION</Expand>
+            <Text description={description} />
+          </div>
+          <LG>
+            <div className="col-lg-8">
+              <Image alt="одежда" src={img1} />
+            </div>
+          </LG>
         </div>
-        <div className="col-lg-8">
-          <Image alt="одежда" src={img1} />
-        </div>
-      </div>
 
-      <div className="row">
-        <Photos>
-          <div className="col-lg-3">
-            <Photo1 src={img2} />
+        <LG>
+          <div className="row">
+            <Photos>
+              <div className="col-lg-3">
+                <Photo src={img2} />
+              </div>
+              <div className="col-lg-3">
+                <Photo src={img3} />
+              </div>
+              <div className="col-lg-3">
+                <Photo src={img4} />
+              </div>
+            </Photos>
           </div>
-          <div className="col-lg-3">
-            <Photo2 src={img3} />
-          </div>
-          <div className="col-lg-3">
-            <Photo3 src={img4} />
-          </div>
-        </Photos>
-      </div>
-    </section>
+        </LG>
+      </section>
+    </Description>
   );
 };
 

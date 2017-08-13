@@ -12,9 +12,7 @@ const Help = styled.button`
   padding-top: 2px;
 `;
 
-const LinkHelp = () =>
+export default () =>
   <Help type="button" title="NEED SIZE HELP?">
     NEED SIZE HELP?
   </Help>;
-
-export default LinkHelp;
