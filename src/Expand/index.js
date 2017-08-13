@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const triangle = process.env.PUBLIC_URL + '/images/Triangle.svg';
+const triangle = process.env.PUBLIC_URL + "/images/Triangle.svg";
 
 const Button = styled.button`
   border: 0;
@@ -13,7 +13,7 @@ const Button = styled.button`
   @media (min-width: 768px) {
     padding: 0;
   }
-`
+`;
 
 const Heading = styled.h2`
   font-family: Raleway;
@@ -21,8 +21,20 @@ const Heading = styled.h2`
   font-weight: 500;
   color: #171717;
   position: relative;
-  margin: 0 0 0 1rem;
+  margin: 0;
   text-align: left;
+  margin-left: 0.5rem;
+
+  @media (min-width: 768px) {
+    border-top: none;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 0.5rem;
+    padding-top: 0;
+    margin-top: 4rem;
+  }
 
   &::after {
     content: '';
@@ -34,7 +46,9 @@ const Heading = styled.h2`
     height: 0.625rem;
     background-image: url('${triangle}');
 
-    ${props => props.open && `
+    ${props =>
+      props.open &&
+      `
       transform: rotate(180deg);
     `}
 
@@ -42,16 +56,16 @@ const Heading = styled.h2`
       display: none;
     }
   }
-`
+`;
 
-const Expand = (props) => {
+const Expand = props => {
   return (
     <Heading open={props.open}>
       <Button>
         {props.children}
       </Button>
     </Heading>
-  )
-}
+  );
+};
 
 export default Expand;
