@@ -14,21 +14,14 @@ const Button = styled.button`
   background: ${props => (props.primary ? "#171717" : "transparent")};
   color: ${props => (props.primary ? "#ffffff" : "#171717")};
   font-weight: normal;
-
-  ${props =>
-    props.small &&
-    `
-    padding: 1rem 0;
-    margin-right: 1rem;
-    margin-bottom:0;
-  `};
+  margin-right: 1rem;
 `;
 
-const Actions = props => {
+const Action = props => {
   return (
-    <Button primary={props.primary} small={props.small} type="button">
+    <Button primary={props.primary} type="button">
       {props.children}
     </Button>
   );
 };
-export default Actions;
+export default Action;

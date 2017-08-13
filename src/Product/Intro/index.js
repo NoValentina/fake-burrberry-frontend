@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 //components
 import { XS, LG, MD } from "./../../common";
 import Slider from "./Slider";
-import Actions from "./Actions";
+import Action from "./Action";
 import Properties from "./Properties";
 import About from "../Large/About";
 
@@ -59,7 +59,6 @@ const BtnActions = styled.div`
 
 const ImageProduct = styled.img`
   display: block;
-  width: 488px;
   height: 651px;
 `;
 
@@ -81,8 +80,8 @@ const ProductIntro = () => {
             <div className="col-xs-12 col-md-5">
               <Properties />
               <BtnActions>
-                <Actions primary>SELECT A SIZE</Actions>
-                <Actions>FIND IN STORE</Actions>
+                <Action primary>SELECT A SIZE</Action>
+                <Action>FIND IN STORE</Action>
                 <Help type="button" title="NEED SIZE HELP?">
                   NEED SIZE HELP?
                 </Help>

@@ -83,7 +83,9 @@ const ProductDescription = () => {
         <div className="row">
           <div className="col-lg-4">
             <Expand open>DESCRIPTION</Expand>
-            <Text description={description} />
+            <Text>
+              {description}
+            </Text>
           </div>
           <LG>
             <div className="col-lg-8">

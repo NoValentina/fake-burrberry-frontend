@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Actions from "../../Intro/Actions";
+import Action from "../../Intro/Action";
 
 import Properties from "../../Intro/Properties";
 import Size from "../Size";
@@ -55,10 +55,8 @@ const About = () =>
       </div>
     </div>
     <Buttons>
-      <Actions primary small>
-        ADD TO BAG
-      </Actions>
-      <Actions small>FIND IN STORE</Actions>
+      <Action primary>ADD TO BAG</Action>
+      <Action>FIND IN STORE</Action>
     </Buttons>
     <Delivery>
       <Title>Free Next Day Delivery</Title>

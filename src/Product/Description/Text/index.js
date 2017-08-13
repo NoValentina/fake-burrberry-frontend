@@ -29,4 +29,4 @@ const Text = styled.div`
 `;
 
 export default props =>
-  <Text dangerouslySetInnerHTML={{ __html: props.description }} />;
+  <Text dangerouslySetInnerHTML={{ __html: props.children }} />;
