@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepush": "npm test"
+    "lint": "$(npm bin)/eslint src --ext=js,jsx",
+    "prepush": "npm run lint"
   }
 }
