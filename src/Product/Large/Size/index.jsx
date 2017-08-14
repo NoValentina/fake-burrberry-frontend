@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Buttons from "../Buttons";
-import Help from "../Help";
+import Buttons from '../Buttons';
+import Help from '../Help';
 
-const sizes = ["S", "M", "L", "XL"];
+const sizes = ['S', 'M', 'L', 'XL'];
 
 const Size = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const Label = styled.p`
 `;
 
 export default () =>
-  <Size>
+  (<Size>
     <Header>
       <Label>
         Size: <b>XL</b>
@@ -38,4 +38,4 @@ export default () =>
       <Help />
     </Header>
     <Buttons sizes={sizes} selectedSize={3} />
-  </Size>;
+  </Size>);

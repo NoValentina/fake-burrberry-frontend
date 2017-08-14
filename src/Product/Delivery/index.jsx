@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-const delivery = process.env.PUBLIC_URL + "/images/delivery@3x.png";
+const delivery = `${process.env.PUBLIC_URL}/images/delivery@3x.png`;
 
 const ProductDelivery = styled.div`
   display: none;
@@ -71,47 +71,43 @@ const Photo = styled.img`
   }
 `;
 
-const Delivery = () => {
-  return (
-    <div className="container">
-      <ProductDelivery>
-        <div className="row">
-          <div className="col-md-7">
-            <Photo alt="доставка" src={delivery} />
-          </div>
-          <div className="col-md-5">
-            <Information>
-              <Header>DELIVERY</Header>
-              <Content>
-                <Label>Free Next Day Delivery</Label>
-                <Description>
+const Delivery = () => (
+  <div className="container">
+    <ProductDelivery>
+      <div className="row">
+        <div className="col-md-7">
+          <Photo alt="доставка" src={delivery} />
+        </div>
+        <div className="col-md-5">
+          <Information>
+            <Header>DELIVERY</Header>
+            <Content>
+              <Label>Free Next Day Delivery</Label>
+              <Description>
                   Order before 7pm Monday to Thursday for delivery the next day
                 </Description>
-              </Content>
-              <Content>
-                <Label>Collect-in-Store</Label>
-                <Description>
-                  Order online today and pick up your items in store as early as
-                  tomorrow
+            </Content>
+            <Content>
+              <Label>Collect-in-Store</Label>
+              <Description>
+                  Order online today and pick up your items in store as early as tomorrow
                 </Description>
-              </Content>
-              <Content>
-                <Label>Free Returns</Label>
-                <Description>Enjoy free returns on your order</Description>
-              </Content>
-              <Content>
-                <Label>Free Gift Packaging</Label>
-                <Description>
-                  Discover our gift packaging, a gold lined box tied with a
-                  coloured ribbon
+            </Content>
+            <Content>
+              <Label>Free Returns</Label>
+              <Description>Enjoy free returns on your order</Description>
+            </Content>
+            <Content>
+              <Label>Free Gift Packaging</Label>
+              <Description>
+                  Discover our gift packaging, a gold lined box tied with a coloured ribbon
                 </Description>
-              </Content>
-            </Information>
-          </div>
+            </Content>
+          </Information>
         </div>
-      </ProductDelivery>
-    </div>
+      </div>
+    </ProductDelivery>
+  </div>
   );
-};
 
 export default Delivery;

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Help = styled.button`
   font-family: Raleway;
@@ -13,6 +13,6 @@ const Help = styled.button`
 `;
 
 export default () =>
-  <Help type="button" title="NEED SIZE HELP?">
+  (<Help type="button" title="NEED SIZE HELP?">
     NEED SIZE HELP?
-  </Help>;
+  </Help>);

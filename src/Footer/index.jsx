@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Navigation from './Navigation';
 
-const Bottom = styled.footer `
+const Bottom = styled.footer`
   margin-top: 3rem;
   background-color: #f3f3f3;
   padding: 1.85rem 1rem;
@@ -12,9 +12,9 @@ const Bottom = styled.footer `
     margin: 2rem 0 0 0;
     padding: 2rem 0 0 0;
   }
-`
+`;
 
-const Location = styled.div `
+const Location = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,7 +23,7 @@ const Location = styled.div `
     margin-top: 1.25rem;
     flex-direction: row;
   }
-`
+`;
 
 const Item = styled.button`
   font-family: Raleway;
@@ -39,12 +39,8 @@ const Item = styled.button`
   @media (min-width: 768px) {
     margin-right: 1.5rem;
   }
-`
-const Information = styled.div`
-  @media (min-width: 768px) {
-    display: none;
-  }
-`
+`;
+const Information = styled.div`@media (min-width: 768px) {display: none;}`;
 const Help = styled.h4`
   font-family: Raleway;
   font-size: 1rem;
@@ -53,7 +49,7 @@ const Help = styled.h4`
   text-align: center;
   margin: 0.45rem 0 1.05rem 0;
   line-height: 1.19;
-`
+`;
 const Contact = styled.a`
   display: block;
   font-family: Lora;
@@ -64,25 +60,22 @@ const Contact = styled.a`
   margin: 0;
   line-height: 1.21;
   text-decoration: none;
-`
+`;
 
-const Footer = () => {
-  return (
-    <Bottom>
-      <div className="container">
-        <Navigation />
-        <Location>
-          <Item>Shipping country: Russian Federation</Item>
-          <Item>Language: English</Item>
-        </Location>
-      </div>
-      <Information>
-        <Help>Need help?</Help>
-        <Contact>Find out more and contact us</Contact>
-      </Information>
-    </Bottom>
+const Footer = () => (
+  <Bottom>
+    <div className="container">
+      <Navigation />
+      <Location>
+        <Item>Shipping country: Russian Federation</Item>
+        <Item>Language: English</Item>
+      </Location>
+    </div>
+    <Information>
+      <Help>Need help?</Help>
+      <Contact>Find out more and contact us</Contact>
+    </Information>
+  </Bottom>
   );
-}
-
 
 export default Footer;

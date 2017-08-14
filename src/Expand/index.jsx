@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-const triangle = process.env.PUBLIC_URL + "/images/Triangle.svg";
+const triangle = `${process.env.PUBLIC_URL}/images/Triangle.svg`;
 
 const Button = styled.button`
   border: 0;
@@ -58,14 +58,12 @@ const Heading = styled.h2`
   }
 `;
 
-const Expand = props => {
-  return (
-    <Heading open={props.open}>
-      <Button>
-        {props.children}
-      </Button>
-    </Heading>
+const Expand = props => (
+  <Heading open={props.open}>
+    <Button>
+      {props.children}
+    </Button>
+  </Heading>
   );
-};
 
 export default Expand;
