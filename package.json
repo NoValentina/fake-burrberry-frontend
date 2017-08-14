@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "$(npm bin)/eslint src --ext=js,jsx",
+    "test": "eslint src --ext=js,jsx",
     "prepush": "npm run test"
   }
 }
