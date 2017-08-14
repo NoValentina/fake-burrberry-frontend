@@ -6,9 +6,9 @@ import Help from '../Help';
 
 const sizes = [
   { value: 'S', id: 1 },
-  { value: 'M', id: 1 },
-  { value: 'L', id: 1 },
-  { value: 'XL', id: 1 },
+  { value: 'M', id: 2 },
+  { value: 'L', id: 3 },
+  { value: 'XL', id: 4 },
 ];
 
 const Size = styled.div`
@@ -42,5 +42,5 @@ export default () =>
       </Label>
       <Help />
     </Header>
-    <Buttons sizes={sizes} selectedSize={3} />
+    <Buttons sizes={sizes} selectedSize={4} />
   </Size>);
