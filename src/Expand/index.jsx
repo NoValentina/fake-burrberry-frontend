@@ -47,7 +47,7 @@ const Heading = styled.h2`
     background-image: url('${triangle}');
 
     ${props =>
-      props.open &&
+    props.open &&
       `
       transform: rotate(180deg);
     `}
@@ -58,12 +58,11 @@ const Heading = styled.h2`
   }
 `;
 
-const Expand = props => (
-  <Heading open={props.open}>
+const Expand = props =>
+  (<Heading open={props.open}>
     <Button>
       {props.children}
     </Button>
-  </Heading>
-  );
+  </Heading>);
 
 export default Expand;

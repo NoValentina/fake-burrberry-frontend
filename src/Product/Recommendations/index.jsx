@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Cards from "../Cards";
-import More from "./More";
+import Cards from '../Cards';
+import More from './More';
 
 const Recommends = styled.div`
   margin: 3.05rem 0.5rem 0 0.5rem;
@@ -48,21 +48,19 @@ const RecommendMore = styled.div`
   }
 `;
 
-const Recommendations = () => {
-  return (
-    <div>
-      <Recommends>
-        <div className="container">
-          <Header>WE RECOMMEND</Header>
-          <Cards />
-        </div>
-      </Recommends>
+const Recommendations = () => (
+  <div>
+    <Recommends>
+      <div className="container">
+        <Header>WE RECOMMEND</Header>
+        <Cards />
+      </div>
+    </Recommends>
 
-      <RecommendMore>
-        <More />
-      </RecommendMore>
-    </div>
-  );
-};
+    <RecommendMore>
+      <More />
+    </RecommendMore>
+  </div>
+);
 
 export default Recommendations;

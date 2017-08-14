@@ -21,6 +21,6 @@ const Color = props => (
   <Button dark={props.dark} active={props.active} type="button">
     {props.children}
   </Button>
-  );
+);
 
 export default Color;

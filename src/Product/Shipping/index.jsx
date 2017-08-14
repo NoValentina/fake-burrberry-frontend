@@ -13,12 +13,11 @@ const Shipping = styled.div`
   }
 `;
 
-const ProductShipping = () => (
-  <div className="container">
+const ProductShipping = () =>
+  (<div className="container">
     <Shipping>
       <Expand>DELIVERY</Expand>
     </Shipping>
-  </div>
-  );
+  </div>);
 
 export default ProductShipping;

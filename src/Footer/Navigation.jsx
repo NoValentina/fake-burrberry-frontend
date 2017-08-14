@@ -70,12 +70,12 @@ const Navigation = () => (
           <Link href="#">Accessibility Statement</Link>
           <Link href="#">
               Japan Only -
-              <Linkabbr title="Single-Cycle Timed Loop">SCTL</Linkabbr> indications
-            </Link>
+            <Linkabbr title="Single-Cycle Timed Loop">SCTL</Linkabbr> indications
+          </Link>
         </List>
       </div>
     </div>
   </FooterMenu>
-  );
+);
 
 export default Navigation;

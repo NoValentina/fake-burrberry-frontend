@@ -85,13 +85,13 @@ const Delivery = () => (
               <Label>Free Next Day Delivery</Label>
               <Description>
                   Order before 7pm Monday to Thursday for delivery the next day
-                </Description>
+              </Description>
             </Content>
             <Content>
               <Label>Collect-in-Store</Label>
               <Description>
                   Order online today and pick up your items in store as early as tomorrow
-                </Description>
+              </Description>
             </Content>
             <Content>
               <Label>Free Returns</Label>
@@ -101,13 +101,13 @@ const Delivery = () => (
               <Label>Free Gift Packaging</Label>
               <Description>
                   Discover our gift packaging, a gold lined box tied with a coloured ribbon
-                </Description>
+              </Description>
             </Content>
           </Information>
         </div>
       </div>
     </ProductDelivery>
   </div>
-  );
+);
 
 export default Delivery;

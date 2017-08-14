@@ -30,8 +30,8 @@ const Price = styled.h5`
   padding-top: 1.5px;
 `;
 
-const Card = props => (
-  <Link href="index.html">
+const Card = props =>
+  (<Link href="index.html">
     <Photo src={props.photo} alt={props.name} />
     <Name>
       {props.name}
@@ -44,7 +44,6 @@ const Card = props => (
         displayType={'text'}
       />
     </Price>
-  </Link>
-  );
+  </Link>);
 
 export default Card;

@@ -77,6 +77,6 @@ const Properties = () => (
       <Color active>Change colour to honey</Color>
     </ChangeColor>
   </Description>
-  );
+);
 
 export default Properties;
