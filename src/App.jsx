@@ -5,12 +5,11 @@ import Header from './Header';
 import Footer from './Footer';
 import Product from './Product';
 
-const App = () => (
-  <div className="app">
+const App = () =>
+  (<div className="app">
     <Header />
     <Product />
     <Footer />
-  </div>
-)
+  </div>);
 
 export default App;

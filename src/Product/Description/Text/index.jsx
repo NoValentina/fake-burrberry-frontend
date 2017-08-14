@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Text = styled.div`
   display: inline-block;
@@ -28,5 +28,4 @@ const Text = styled.div`
   }
 `;
 
-export default props =>
-  <Text dangerouslySetInnerHTML={{ __html: props.children }} />;
+export default props => <Text dangerouslySetInnerHTML={{ __html: props.children }} />;
