@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import Buttons from '../Buttons';
 import Help from '../Help';
 
-const sizes = [{ value: 'S' }, { value: 'M' }, { value: 'L' }, { value: 'XL' }];
+const sizes = [
+  { value: 'S', id: 1 },
+  { value: 'M', id: 1 },
+  { value: 'L', id: 1 },
+  { value: 'XL', id: 1 },
+];
 
 const Size = styled.div`
   display: flex;
