@@ -76,6 +76,6 @@ const Footer = () => (
       <Contact>Find out more and contact us</Contact>
     </Information>
   </Bottom>
-  );
+);
 
 export default Footer;

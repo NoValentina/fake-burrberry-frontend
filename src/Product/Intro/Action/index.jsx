@@ -21,5 +21,5 @@ const Action = props => (
   <Button primary={props.primary} type="button">
     {props.children}
   </Button>
-  );
+);
 export default Action;

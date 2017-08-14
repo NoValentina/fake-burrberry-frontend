@@ -8,13 +8,13 @@ const Header = styled.h2`
   font-weight: 500;
   color: #171717;
   margin: 0;
-`
+`;
 
 const List = styled.div`
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-`
+`;
 
 const Item = styled.a`
   font-family: Lora;
@@ -24,30 +24,27 @@ const Item = styled.a`
   margin-bottom: 1rem;
   line-height: 1.23;
   text-decoration: none;
-`
+`;
 
 const Link = styled.a`
   text-decoration: none;
   font-family: Raleway;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.19;
-	color: #171717;
-`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #171717;
+`;
 
-const More = () => {
-  return (
-    <div className="container">
-      <Header>
-        <Link href="#">MORE FOR YOU</Link>
-      </Header>
-      <List>
-        <Item href="#">Men’s Black Trench Coats</Item>
-        <Item href="#">Men’s Short Trench Coats</Item>
-        <Item href="#">Men’s Long Trench Coats</Item>
-      </List>
-    </div>
-  )
-}
+const More = () =>
+  (<div className="container">
+    <Header>
+      <Link href="#">MORE FOR YOU</Link>
+    </Header>
+    <List>
+      <Item href="#">Men’s Black Trench Coats</Item>
+      <Item href="#">Men’s Short Trench Coats</Item>
+      <Item href="#">Men’s Long Trench Coats</Item>
+    </List>
+  </div>);
 
 export default More;
