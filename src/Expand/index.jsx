@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const triangle = process.env.PUBLIC_URL + "/images/Triangle.svg";
+const triangle = `${process.env.PUBLIC_URL}/images/Triangle.svg`;
 
 const Button = styled.button`
   border: 0;
@@ -47,7 +48,7 @@ const Heading = styled.h2`
     background-image: url('${triangle}');
 
     ${props =>
-      props.open &&
+    props.open &&
       `
       transform: rotate(180deg);
     `}
@@ -58,14 +59,20 @@ const Heading = styled.h2`
   }
 `;
 
-const Expand = props => {
-  return (
-    <Heading open={props.open}>
-      <Button>
-        {props.children}
-      </Button>
-    </Heading>
-  );
+const Expand = props =>
+  (<Heading open={props.open}>
+    <Button>
+      {props.children}
+    </Button>
+  </Heading>);
+
+Expand.propTypes = {
+  open: PropTypes.boolean,
+  children: PropTypes.node.isRequired,
+};
+
+Expand.defaultProps = {
+  open: false,
 };
 
 export default Expand;

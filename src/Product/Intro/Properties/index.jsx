@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Color from "../Color";
+import Color from '../Color';
 
 const Description = styled.div`
   display: flex;
@@ -63,22 +63,20 @@ const ChangeColor = styled.div`
   margin-top: 1.05rem;
 `;
 
-const Properties = () => {
-  return (
-    <Description>
-      <About>
-        <Price>110 000 руб</Price>
-        <Item>Item 39428531</Item>
-      </About>
-      <TitleColour>
+const Properties = () => (
+  <Description>
+    <About>
+      <Price>110 000 руб</Price>
+      <Item>Item 39428531</Item>
+    </About>
+    <TitleColour>
         Colour: <b>Honey</b>
-      </TitleColour>
-      <ChangeColor>
-        <Color dark>Change colour to black</Color>
-        <Color active>Change colour to honey</Color>
-      </ChangeColor>
-    </Description>
-  );
-};
+    </TitleColour>
+    <ChangeColor>
+      <Color dark>Change colour to black</Color>
+      <Color active>Change colour to honey</Color>
+    </ChangeColor>
+  </Description>
+);
 
 export default Properties;

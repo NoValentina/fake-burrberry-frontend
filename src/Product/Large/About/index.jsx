@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Action from "../../Intro/Action";
+import Action from '../../Intro/Action';
 
-import Properties from "../../Intro/Properties";
-import Size from "../Size";
+import Properties from '../../Intro/Properties';
+import Size from '../Size';
 
 const Name = styled.h1`
   margin-top: 9.9375rem;
@@ -44,7 +44,7 @@ const Content = styled.p`
 `;
 
 const About = () =>
-  <div>
+  (<div>
     <Name>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</Name>
     <div className="row">
       <div className="col-lg-6">
@@ -60,10 +60,8 @@ const About = () =>
     </Buttons>
     <Delivery>
       <Title>Free Next Day Delivery</Title>
-      <Content>
-        Order before 7pm Monday to Thursday for delivery the next day
-      </Content>
+      <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
     </Delivery>
-  </div>;
+  </div>);
 
 export default About;

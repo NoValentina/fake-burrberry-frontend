@@ -11,16 +11,13 @@ const Shipping = styled.div`
   @media (min-width: 768px) {
     display: none;
   }
-`
+`;
 
-const ProductShipping = () => {
-  return (
-    <div className="container">
-      <Shipping>
-        <Expand>DELIVERY</Expand>
-      </Shipping>
-    </div>
-  )
-}
+const ProductShipping = () =>
+  (<div className="container">
+    <Shipping>
+      <Expand>DELIVERY</Expand>
+    </Shipping>
+  </div>);
 
 export default ProductShipping;
