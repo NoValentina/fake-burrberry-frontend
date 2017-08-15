@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const Button = styled.button`
+const BtnSize = styled.button`
   padding: .5rem 1rem;
   margin-right: 0.5rem;
   border-radius: 0.125rem;
@@ -20,7 +21,18 @@ const Button = styled.button`
     `};
 `;
 
-export default props =>
-  (<Button selected={props.selected}>
+const Button = props =>
+  (<BtnSize selected={props.selected}>
     {props.children}
-  </Button>);
+  </BtnSize>);
+
+Button.propTypes = {
+  selected: PropTypes.boolean,
+  children: PropTypes.node.isRequired,
+};
+
+Button.defaultProps = {
+  selected: false,
+};
+
+export default Button;

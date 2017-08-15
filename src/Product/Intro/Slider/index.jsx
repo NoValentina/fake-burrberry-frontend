@@ -14,17 +14,17 @@ const List = styled.div`
 
 const Img = styled.img`
   display: block;
-  width: 432px;
+
   height: 576px;
   padding-left: 0;
 `;
 
 const Slider = () =>
   (<List>
-    <Img alt="одежда" src={slide1} />
-    <Img alt="одежда" src={slide2} />
-    <Img alt="одежда" src={slide3} />
-    <Img alt="одежда" src={slide4} />
+    <Img alt="Товар" src={slide1} />
+    <Img alt="Товар" src={slide2} />
+    <Img alt="Товар" src={slide3} />
+    <Img alt="Товар" src={slide4} />
   </List>);
 
 export default Slider;

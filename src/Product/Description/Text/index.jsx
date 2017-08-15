@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const Text = styled.div`
+const Txt = styled.div`
   display: inline-block;
   margin: 2.06rem 1rem 1.95rem 0.5rem;
 
@@ -28,4 +29,10 @@ const Text = styled.div`
   }
 `;
 
-export default props => <Text dangerouslySetInnerHTML={{ __html: props.children }} />;
+const Text = props => <Txt dangerouslySetInnerHTML={{ __html: props.children }} />;
+
+Text.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Text;

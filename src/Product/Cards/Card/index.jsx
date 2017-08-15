@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
 
 const Link = styled.a`
@@ -45,5 +45,11 @@ const Card = props =>
       />
     </Price>
   </Link>);
+
+Card.propTypes = {
+  photo: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+};
 
 export default Card;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Button = styled.button`
   width: 2.5rem;
@@ -17,10 +18,20 @@ const Button = styled.button`
   `};
 `;
 
-const Color = props => (
-  <Button dark={props.dark} active={props.active} type="button">
+const Color = props =>
+  (<Button dark={props.dark} active={props.active} type="button">
     {props.children}
-  </Button>
-);
+  </Button>);
+
+Color.propTypes = {
+  dark: PropTypes.boolean,
+  active: PropTypes.boolean,
+  children: PropTypes.node.isRequired,
+};
+
+Color.defaultProps = {
+  dark: false,
+  active: false,
+};
 
 export default Color;

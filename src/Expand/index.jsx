@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const triangle = `${process.env.PUBLIC_URL}/images/Triangle.svg`;
 
@@ -64,5 +65,14 @@ const Expand = props =>
       {props.children}
     </Button>
   </Heading>);
+
+Expand.propTypes = {
+  open: PropTypes.boolean,
+  children: PropTypes.node.isRequired,
+};
+
+Expand.defaultProps = {
+  open: false,
+};
 
 export default Expand;
