@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
 // components
-import { LG, MD } from './../../common';
+import { XS, LG, SM } from './../../common';
 import Slider from './Slider';
 import Action from './Action';
 import Properties from './Properties';
@@ -69,7 +69,7 @@ const ProductIntro = () =>
     <Helmet>
       <title>Long Cotton Gabardine Car Coat</title>
     </Helmet>
-    <MD>
+    <XS>
       <section className="container">
         <Name>Long Cotton Gabardine Car Coat</Name>
         <div className="row">
@@ -88,7 +88,27 @@ const ProductIntro = () =>
           </div>
         </div>
       </section>
-    </MD>
+    </XS>
+    <SM>
+      <section className="container">
+        <Name>Long Cotton Gabardine Car Coat</Name>
+        <div className="row">
+          <div className="col-xs-12 col-md-7">
+            <Slider />
+          </div>
+          <div className="col-xs-12 col-md-5">
+            <Properties />
+            <BtnActions>
+              <Action primary>SELECT A SIZE</Action>
+              <Action>FIND IN STORE</Action>
+              <Help type="button" title="NEED SIZE HELP?">
+                NEED SIZE HELP?
+              </Help>
+            </BtnActions>
+          </div>
+        </div>
+      </section>
+    </SM>
     <LG>
       <Background>
         <section className="container-fluid">
