@@ -7,9 +7,9 @@ import Text from './Text';
 
 // images
 const img1 = `${process.env.PUBLIC_URL}/images/slide2.png`;
-const img2 = `${process.env.PUBLIC_URL}/images/photo3x.jpg`;
-const img3 = `${process.env.PUBLIC_URL}/images/slide3.jpg`;
-const img4 = `${process.env.PUBLIC_URL}/images/slide4.jpg`;
+// const img2 = `${process.env.PUBLIC_URL}/images/photo3x.jpg`;
+// const img3 = `${process.env.PUBLIC_URL}/images/slide3.jpg`;
+// const img4 = `${process.env.PUBLIC_URL}/images/slide4.jpg`;
 
 const description = `
   <p>A refined car coat crafted in protective cotton gabardine.</p>
@@ -88,13 +88,13 @@ const ProductDescription = () =>
         <div className="row">
           <Photos>
             <div className="col-lg-3">
-              <Photo src={img2} />
+              <Photo src={img1} />
             </div>
             <div className="col-lg-3">
-              <Photo src={img3} />
+              <Photo src={img1} />
             </div>
             <div className="col-lg-3">
-              <Photo src={img4} />
+              <Photo src={img1} />
             </div>
           </Photos>
         </div>
