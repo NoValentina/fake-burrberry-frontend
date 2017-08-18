@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { XS, MD } from '../../../common';
 
-const arrow = `${process.env.PUBLIC_URL}/images/arrow.png`;
+const arrow = `${process.env.PUBLIC_URL}/images/arrow.svg`;
 
 const List = styled.div`
   display: flex;

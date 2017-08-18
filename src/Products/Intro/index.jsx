@@ -59,6 +59,24 @@ const CriterionMD = styled.div`
   padding-bottom: 1.5rem;
 `;
 
+const Link = styled.a`
+  opacity: 0.87;
+  font-family: Raleway;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #171717;
+`;
+
+const Button = styled.button`
+  background-color: transparent;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  color: #171717;
+  border: none;
+  text-decoration: underline;
+`;
+
 const Intro = () =>
   (<div>
     <Helmet>
@@ -69,9 +87,18 @@ const Intro = () =>
         <div className="col-xs-12 col-md-10 col-lg-6">
           <Header>Men’s clothing</Header>
           <Description>
-            Explore our menswear collection for the season. Sculptural knitwear, sweatshirts, artist
-            overalls and oversized cabans feature alongside our signature trench coat in both
-            heritage.
+            <XS>
+              Explore our menswear collection for the season. Sculptural knitwear,sweatshirts ,
+              artist overalls and oversized cabans feature alongside our signature trench coat in
+              both heritage.
+            </XS>
+            <MD>
+              Explore our menswear collection for the season. Sculptural knitwear,
+              <Link href="#"> sweatshirts </Link>
+              ,artist overalls and oversized cabans feature alongside our signature trench coat in
+              both heritage.
+              <Button>More</Button>
+            </MD>
           </Description>
         </div>
         <XS>

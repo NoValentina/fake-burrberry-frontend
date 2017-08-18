@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { LG } from '../common';
+
 const FooterMenu = styled.div`
   display: none;
 
@@ -35,8 +37,26 @@ const Link = styled.a`
 
 const Linkabbr = styled.abbr`text-decoration: none !important;`;
 
-const Navigation = () => (
-  <FooterMenu>
+const Image = styled.img`width: 100%;`;
+
+const Store = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+`;
+
+const Reference = styled.a`
+  margin-top: 1rem;
+  font-family: Raleway;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #171717;
+  text-decoration: underline;
+`;
+
+const Navigation = () =>
+  (<FooterMenu>
     <div className="row">
       <div className="col-sm-3">
         <List>
@@ -69,13 +89,24 @@ const Navigation = () => (
           <Link href="#">Cookie Policy</Link>
           <Link href="#">Accessibility Statement</Link>
           <Link href="#">
-              Japan Only -
+            Japan Only -
             <Linkabbr title="Single-Cycle Timed Loop">SCTL</Linkabbr> indications
           </Link>
         </List>
       </div>
+      <LG>
+        <div className="col-lg-3">
+          <Store>
+            <Image
+              src={
+                '//assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg?$BBY_V2_BASIC$&wid=782'
+              }
+            />
+            <Reference>Find a store</Reference>
+          </Store>
+        </div>
+      </LG>
     </div>
-  </FooterMenu>
-);
+  </FooterMenu>);
 
 export default Navigation;
