@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 
 // components
 import { XS, MD } from '../../common';
-import Slider from './Slider';
+import Sort from './Sort';
 
 const Header = styled.h2`
   font-family: Lora;
@@ -13,16 +13,18 @@ const Header = styled.h2`
   font-weight: normal;
   margin-top: 0;
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 `;
 
 const IntroProducts = styled.div`
-  padding-top: 2rem;
+  padding-top: 2.2rem;
   background-color: #f3f3f3;
   margin-bottom: 2rem;
+  overflow-x: scroll;
 
   @media (min-width: 768px) {
-    margin-bottom: 4rem;
+    margin-bottom: 4.17rem;
+    padding-top: 4.1rem;
   }
 `;
 
@@ -36,35 +38,14 @@ const Description = styled.p`
   margin-bottom: 0;
 `;
 
-const Label = styled.p`
-  font-family: Raleway;
-  font-size: 0.75rem;
-  line-height: 1.33;
-  color: #171717;
-  white-space: nowrap;
-  margin-top: 0;
-  padding: 0;
-`;
-
-const CriterionXS = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-`;
-
-const CriterionMD = styled.div`
-  margin-top: 2.5rem;
-  padding-bottom: 1.5rem;
-`;
-
 const Link = styled.a`
   opacity: 0.87;
   font-family: Raleway;
   font-size: 12px;
   line-height: 1.67;
   color: #171717;
+  text-decoration: none;
+  border-bottom: 1px solid #171717;
 `;
 
 const Button = styled.button`
@@ -75,6 +56,13 @@ const Button = styled.button`
   color: #171717;
   border: none;
   text-decoration: underline;
+  padding-left: 0.6rem;
+`;
+
+const List = styled.div`
+  margin-top: 2.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
 `;
 
 const Intro = () =>
@@ -84,40 +72,33 @@ const Intro = () =>
     </Helmet>
     <IntroProducts>
       <div className="container">
-        <div className="col-xs-12 col-md-10 col-lg-6">
-          <Header>Men’s clothing</Header>
-          <Description>
-            <XS>
-              Explore our menswear collection for the season. Sculptural knitwear,sweatshirts ,
-              artist overalls and oversized cabans feature alongside our signature trench coat in
-              both heritage.
-            </XS>
-            <MD>
-              Explore our menswear collection for the season. Sculptural knitwear,
-              <Link href="#"> sweatshirts </Link>
-              ,artist overalls and oversized cabans feature alongside our signature trench coat in
-              both heritage.
-              <Button>More</Button>
-            </MD>
-          </Description>
+        <div className="row">
+          <div className="col-xs-12 col-md-9 col-lg-6">
+            <Header>Men’s Clothing</Header>
+            <Description>
+              <XS>
+                Explore our menswear collection for the season. Sculptural knitwear, sweatshirts,
+                artist overalls and oversized cabans feature alongside our signature trench coat in
+                both heritage.
+              </XS>
+              <MD>
+                Explore our menswear collection for the season. Sculptural knitwear,
+                <Link href="#"> sweatshirts </Link>
+                ,artist overalls and oversized cabans feature alongside our signature trench coat in
+                both heritage and seasonal…
+                <Button>More</Button>
+              </MD>
+            </Description>
+          </div>
+          <div className="col-xs-12">
+            <List>
+              <Sort>Category</Sort>
+              <Sort>Colour</Sort>
+              <Sort>Size</Sort>
+              <Sort right>Sort by price</Sort>
+            </List>
+          </div>
         </div>
-        <XS>
-          <CriterionXS>
-            <div className="col-xs-4">
-              <Label>Refine by</Label>
-            </div>
-            <div className="col-xs-8">
-              <Slider />
-            </div>
-          </CriterionXS>
-        </XS>
-        <MD>
-          <CriterionMD>
-            <div className="col-md-12">
-              <Slider />
-            </div>
-          </CriterionMD>
-        </MD>
       </div>
     </IntroProducts>
   </div>);

@@ -8,7 +8,7 @@ const like = `${process.env.PUBLIC_URL}/images/like.svg`;
 const Description = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 0.87rem;
   justify-content: space-between;
 `;
 
@@ -47,7 +47,7 @@ const Title = styled.p`
   font-family: Raleway;
   font-size: 0.75rem;
   font-weight: 600;
-  line-height: 1.33;
+  line-height: 1.46;
   color: #171717;
   margin: 0;
 
@@ -88,7 +88,7 @@ const Availability = styled.h4`
   line-height: 1.33;
   color: #171717;
   font-weight: normal;
-  margin-top: 0.5rem;
+  margin-top: 0.55rem;
   margin-bottom: 0.25rem;
 `;
 

@@ -34,17 +34,17 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/90dd344122ccf1884fce63c4fc775bd6baa7a11f.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Classic fit',
-      name: 'The Kensington – Mid-Length Heritage Trench Coat',
-      color: '4 colours',
+      fit: 'Relaxed fit',
+      name: 'The Westminster – Long Heritage Trench Coat',
+      color: '3 colours',
       price: 1.295,
       id: 2,
     },
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/fb6adea94455f2a73e97b5cf2d7811d9135dcbe2.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Toilered fit',
-      name: 'The Sandringham – Mid-length Heritage Trench Coat',
+      fit: 'Relaxed fit',
+      name: 'The Westminster – Long Heritage Trench Coat',
       color: '3 colours',
       price: 1.295,
       id: 3,
@@ -52,8 +52,8 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/a2fa084eae958434c326685fc8ff19dfce9fe430.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Slim fit',
-      name: 'The Chelsea – Short Heritage Trench Coat',
+      fit: 'Relaxed fit',
+      name: 'The Westminster – Long Heritage Trench Coat',
       color: '3 colours',
       price: 1.195,
       id: 4,
@@ -65,7 +65,7 @@ const goods = {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/70d0ea20f4faa00e90a0e70fed88af9cd4874824.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
       fit: 'Online Exclusive',
-      name: 'The Chelsea – Short Heritage Trench Coat',
+      name: 'The Brighton – Longline Car Coat',
       color: '3 colours',
       price: 1.195,
       id: 5,
@@ -82,8 +82,8 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/0c526ecde3443d15c60f660214d320ca4c338c88.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Slim fit',
-      name: 'The Chelsea – Short Heritage Trench Coat',
+      fit: 'New in',
+      name: 'The Brighton – Longline Car Coat',
       color: '3 colours',
       price: 1.195,
       id: 7,
@@ -91,8 +91,8 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/eb872d02449c4050916c9eaf44e266bfdbd32304.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195',
-      fit: 'Slim fit',
-      name: 'The Chelsea – Short Heritage Trench Coat',
+      fit: 'New in',
+      name: 'The Brighton – Longline Car Coat',
       color: '3 colours',
       price: 1.195,
       id: 8,
@@ -103,7 +103,7 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/f1cdf8b71c19df8d42ed3ea90712c391e6823635.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Online Exclusive',
+      fit: 'Relaxed fit',
       name: 'The Westminster – Long Heritage Trench Coat',
       color: '3 colours',
       price: 1.195,
@@ -112,7 +112,7 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/23b186def7725e3d4ce4745374ebf11267ed68ed.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Online Exclusive',
+      fit: 'Classic fit',
       name: 'The Kensington – Long Heritage Trench Coat',
       color: '4 colours',
       price: 1.195,
@@ -121,7 +121,7 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/c89a32c4e94178be2d833b9a3d434fa6087d1f25.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Online Exclusive',
+      fit: 'Toilered fit',
       name: 'The Sandringham Short Heritage Trench Coat',
       color: '3 colours',
       price: 1.195,
@@ -130,7 +130,7 @@ const goods = {
     {
       photo:
         'https://assets.burberry.com/is/image/Burberryltd/f3e96bbcf8fa0aca509c9f5933110b8596d4f06e.jpg?$BBY_V2_ML_3X4$&wid=556&hei=742',
-      fit: 'Online Exclusive',
+      fit: 'Slim fit',
       name: 'The Chelsea – Long Heritage Trench Coat',
       color: '3 colours',
       price: 1.195,
@@ -183,10 +183,11 @@ const Border = styled.hr`
   background-color: #c6c6c6;
   height: 1px;
   margin-bottom: 3rem;
+  margin-top: 1rem;
 
   @media (min-width: 768px) {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 2.1rem;
+    margin-bottom: 3.05rem;
   }
 `;
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Li = styled.li`display: inline-block;`;
 
-const Link = styled.a`
+const Link = styled(NavLink)`
   font-family: Raleway;
   font-size: 0.75rem;
   font-weight: 600;
@@ -16,29 +17,24 @@ const Link = styled.a`
   padding: 1rem;
   text-decoration: none;
 
-  ${props =>
-    props.active &&
-    `border-bottom: 1px solid #171717;
-  color:#171717;
-  font-style: normal;
-  font-stretch: normal;
-  `};
+  &.active {
+    border-bottom: 1px solid #171717;
+    color:#171717;
+    font-style: normal;
+    font-stretch: normal;
+  }
 `;
 
 const Item = props =>
   (<Li>
-    <Link active={props.active} href="#">
+    <Link to={`/products/${props.type}`}>
       {props.children}
     </Link>
   </Li>);
 
 Item.propTypes = {
-  active: PropTypes.boolean,
+  type: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-};
-
-Item.defaultProps = {
-  active: false,
 };
 
 export default Item;

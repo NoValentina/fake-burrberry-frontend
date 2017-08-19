@@ -40,7 +40,9 @@ const Item = styled.button`
     margin-right: 1.5rem;
   }
 `;
+
 const Information = styled.div`@media (min-width: 768px) {display: none;}`;
+
 const Help = styled.h4`
   font-family: Raleway;
   font-size: 1rem;
@@ -50,6 +52,7 @@ const Help = styled.h4`
   margin: 0.45rem 0 1.05rem 0;
   line-height: 1.19;
 `;
+
 const Contact = styled.a`
   display: block;
   font-family: Lora;
@@ -62,20 +65,25 @@ const Contact = styled.a`
   text-decoration: none;
 `;
 
-const Footer = () => (
-  <Bottom>
+const Bold = styled.span`color: #171717;`;
+
+const Footer = () =>
+  (<Bottom>
     <div className="container">
       <Navigation />
       <Location>
-        <Item>Shipping country: Russian Federation</Item>
-        <Item>Language: English</Item>
+        <Item>
+          Shipping country: <Bold>Russian Federation</Bold>
+        </Item>
+        <Item>
+          Language: <Bold>English</Bold>
+        </Item>
       </Location>
     </div>
     <Information>
       <Help>Need help?</Help>
       <Contact>Find out more and contact us</Contact>
     </Information>
-  </Bottom>
-);
+  </Bottom>);
 
 export default Footer;

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import logo from './Logo.svg';
 import { MD } from '../common';
-import Menu from './Menu';
 
 const hamburger = `${process.env.PUBLIC_URL}/images/hamburger.png`;
 const arrow = `${process.env.PUBLIC_URL}/images/arrow.svg`;
@@ -17,7 +16,7 @@ const HeaderLogo = styled.img`
 
   @media (min-width: 768px) {
     height: 1rem;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 1.5rem 0 1.4rem 0;
   }
 
   @media (min-width: 1200px) {
@@ -71,15 +70,9 @@ const Button = styled.button`
   }
 `;
 
-const Head = styled.header`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 const Country = styled.div`
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 1.38rem;
   position: absolute;
   top: 0;
 
@@ -91,19 +84,14 @@ const Country = styled.div`
 function Header() {
   return (
     <div className="container">
-      <Head>
-        <MD>
-          <Country>
-            <Button type="button">Shopping in: United Kingdom (£)</Button>
-          </Country>
-        </MD>
-        <Link href="#">
-          <HeaderLogo alt="логотип" src={logo} />
-        </Link>
-        <MD>
-          <Menu />
-        </MD>
-      </Head>
+      <MD>
+        <Country>
+          <Button type="button">Shopping in: United Kingdom (£)</Button>
+        </Country>
+      </MD>
+      <Link href="#">
+        <HeaderLogo alt="логотип" src={logo} />
+      </Link>
     </div>
   );
 }

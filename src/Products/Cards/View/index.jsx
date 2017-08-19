@@ -6,6 +6,7 @@ const Show = styled.div`
   flex-direction: column;
   margin: 3rem 0 5rem 0;
   text-align: center;
+  align-items: center;
 `;
 
 const Label = styled.p`
@@ -17,7 +18,7 @@ const Label = styled.p`
   margin-bottom: 1rem;
 
   @media (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
   }
 
@@ -35,9 +36,7 @@ const Button = styled.button`
   font-size: 0.75rem;
   line-height: 1.33;
   color: #171717;
-
-  @media (min-width: 768px) {
-    font-size: 1rem;
+  max-width: 140px;
 
     @media (min-width: 992px) {
       font-size: 0.75rem;
@@ -47,9 +46,7 @@ const Button = styled.button`
 
 const View = () =>
   (<Show>
-    <div className="container">
-      <Label>Showing 8 of 17</Label>
-      <Button>View 9 more</Button>
-    </div>
+    <Label>Showing 8 of 17</Label>
+    <Button>View 9 more</Button>
   </Show>);
 export default View;
