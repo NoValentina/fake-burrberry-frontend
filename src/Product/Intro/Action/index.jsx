@@ -31,4 +31,5 @@ Action.propTypes = {
 Action.defaultProps = {
   primary: false,
 };
+
 export default Action;
